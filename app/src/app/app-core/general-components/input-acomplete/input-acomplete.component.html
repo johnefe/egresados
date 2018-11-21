@@ -1,0 +1,26 @@
+<div class="form-group">
+    <label class="control-label">{{titulo}}<span *ngIf="xrequired == 'true'">*</span>&nbsp;</label>
+    <span class="fa fa-question-circle" tooltip={{xtooltip}}></span>
+
+    <div class='pos-rel'>
+        <input #input type="{{xtype}}" [ngClass]="{validInput : !xformErrors && itemSelect && isTouch, invalidInput: (xformErrors|| !itemSelect || !isTouch) && xdisabled == 'false' }"
+            class="form-control" placeholder="{{xplaceholder}}" (keyup)="changeInput(input.value)" (change)="changeInput(input.value)"
+            (click)="onClick(input.value);" [disabled]="xdisabled == 'true'" value={{inputVal}}>
+
+        <div (clickOutside)='outside()' [hidden]="input.value.length < 2 || !isListItem" class="dropdown_container">
+            <div *ngFor="let item of items" class='state' (click)="selectItem(item);">                
+                 <div class='title_style' [ngClass]="{'whitout_Border': !listSubTitulo}" >{{item[listTitulo]}}</div>                 
+                 <div class='subtitle_style' *ngFor="let sub of subtitulos" >
+                     {{item[sub]}}
+                 </div>
+            </div>
+        </div>
+
+    </div>
+    <div *ngIf="xformErrors && isTouch" class='error_style'>
+            * {{ xformErrors }}
+    </div>
+    <div *ngIf="!itemSelect && isTouch" class='error_style'>
+            * Debe escoger una opción
+    </div>
+</div>

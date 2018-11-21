@@ -1,0 +1,170 @@
+<div>
+  <div class="ge-header">
+    <div class="ide">
+      <i class="fa fa-user" aria-hidden="true"></i>
+      Datos personales
+    </div>
+  </div>
+  <section class="content">
+
+    <div class="box box-primary">
+      <div class="box-header with-border">
+        <!--NOMBRE E IDENTIFICACION-->
+        <div class='row card_user'>
+          <div class='col-9'>
+            <div class='nombre_hv'>{{form.value.primer_nombre}} {{form.value.segundo_nombre}}
+              {{form.value.primer_apellido}}
+              {{form.value.segundo_apellido}}</div>
+            <div class='identificacion_hv'> {{form.value.num_identificacion}}</div>
+          </div>
+          <div class='col-3'>
+            <div class='mx-auto' style='width: 60px; height: 60px;'>
+              <!--img ng-src="img/avatar04.png" class="img-circle" alt="User Image" src="assets/img/avatars/avatar1.png"-->
+            </div>
+          </div>
+        </div>
+        <!--FIN NOMBRE E IDENTIFICACION-->
+      </div>
+      <div class="box-body">
+        <!--FORMULARIO DE REGISTRO PERSONA -->
+        <form #personaForm="ngForm" name='personaForm' [formGroup]="form" (submit)="guardar()">
+          <div class='row'>
+            <div class='col-sm'>
+              <app-select name='tipo_documento' xformErrors={{formErrors.tipo_documento[0]}} formControlName="tipo_documento"
+                xrequired='true' [data]="tipoIdentificacion" xval='id_param_general' xopt='descripcion' xtooltip="Obligatorio"
+                titulo="Tipo identificación" required></app-select>
+            </div>
+
+            <div class='col-sm'>
+              <app-input name='num_identificacion' xformErrors={{formErrors.num_identificacion[0]}} formControlName="num_identificacion"
+                xrequired='true' xtype="number" xplaceholder="Identificación" xtooltip="Obligatorio" titulo="Identificación"
+                mPattern="Debe digitar solo números" pattern="[1-9][0-9]*" required></app-input>
+            </div>
+
+            <div class='col-sm'>
+              <app-input-date name='fecha_expedicion' xformErrors={{formErrors.fecha_expedicion[0]}} formControlName="fecha_expedicion"
+                xrequired='true' xtype="text" xplaceholder="Fecha de expedición" xtooltip="Obligatorio" titulo="Fecha de expedición"
+                required></app-input-date>
+            </div>
+
+            <div class="col-sm">
+              <app-input-acomplete name='ciudad_expedicion' xformErrors={{formErrors.ciudad_expedicion[0]}}
+                formControlName="ciudad_expedicion" xrequired='true' xtype="text" xplaceholder="Ciudad de expedición"
+                xtooltip="Obligatorio" titulo="Ciudad de expedición" ruta='getCiudades' listTitulo='ciudad'
+                listSubTitulo='departamento,pais' required></app-input-acomplete>
+            </div>
+          </div>
+
+          <div class='row'>
+            <div class="form-group col-sm">
+              <app-input name='primer_nombre' xformErrors={{formErrors.primer_nombre[0]}} formControlName="primer_nombre"
+                xrequired='true' xtype="text" xplaceholder="Primer nombre" xtooltip="Obligatorio" titulo="Primer nombre"
+                required></app-input>
+            </div>
+
+            <div class="form-group col-sm">
+              <app-input name='segundo_nombre' xformErrors={{formErrors.segundo_nombre[0]}} formControlName="segundo_nombre"
+                xtype="text" xplaceholder="Segundo nombre" xtooltip="Segundo nombre" titulo="Segundo nombre"></app-input>
+            </div>
+
+            <div class="form-group col-sm">
+              <app-input name='primer_apellido' xformErrors={{formErrors.primer_apellido[0]}} formControlName="primer_apellido"
+                xrequired='true' xtype="text" xplaceholder="Primer apellido" xtooltip="Obligatorio" titulo="Primer apellido"
+                required></app-input>
+            </div>
+
+            <div class="form-group col-sm">
+              <app-input name='segundo_apellido' xformErrors={{formErrors.segundo_apellido[0]}} formControlName="segundo_apellido"
+                xtype="text" xplaceholder="Segundo apellido" xtooltip="Segundo apellido" titulo="Segundo apellido"></app-input>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-sm">
+              <app-select name='sexo_biologico' xformErrors={{formErrors.sexo_biologico[0]}} formControlName="sexo_biologico"
+                xrequired='true' [data]="[{gen:'F'},{gen:'M'}]" xval='gen' xopt='gen' xtooltip="Obligatorio" titulo="Sexo biológico"
+                required></app-select>
+            </div>
+
+            <div class="form-group col-sm">
+              <app-select name='grupo_sanguineo' xformErrors={{formErrors.grupo_sanguineo[0]}} formControlName="grupo_sanguineo"
+                xrequired='true' [data]="grupoSanguineo" xval='id_param_general' xopt='descripcion' xtooltip="Obligatorio"
+                titulo="Grupo sanguíneo" required></app-select>
+            </div>
+
+            <div class="form-group col-sm">
+              <app-select name='estado_civil' xformErrors={{formErrors.estado_civil[0]}} formControlName="estado_civil"
+                xrequired='true' [data]="estadoCivil" xval='id_param_general' xopt='descripcion' xtooltip="Obligatorio"
+                titulo="Estado civil" required></app-select>
+            </div>
+          </div>
+
+          <div class='row'>
+            <div class="form-group col-sm">
+              <app-input-acomplete name='ciudad_nacimiento' xformErrors={{formErrors.ciudad_nacimiento[0]}}
+                formControlName="ciudad_nacimiento" xrequired='true' xtype="text" xplaceholder="Ciudad de nacimiento"
+                xtooltip="Obligatorio" titulo="Ciudad de nacimiento" ruta='getCiudades' listTitulo='ciudad'
+                listSubTitulo='departamento,pais' required></app-input-acomplete>
+            </div>
+
+            <div class="form-group col-sm">
+              <app-input-date name='fecha_nacimiento' xformErrors={{formErrors.fecha_nacimiento[0]}} formControlName="fecha_nacimiento"
+                xrequired='true' xtype="text" xplaceholder="Fecha de nacimiento" xtooltip="Obligatorio" titulo="Fecha de nacimiento"
+                required></app-input-date>
+            </div>
+
+            <div class="form-group col-sm">
+              <app-input-acomplete name='ciudad_residencia' xformErrors={{formErrors.ciudad_residencia[0]}}
+                formControlName="ciudad_residencia" xrequired='true' xtype="text" xplaceholder="Ciudad de residencia"
+                xtooltip="Obligatorio" titulo="Ciudad de residencia" ruta='getCiudades' listTitulo='ciudad'
+                listSubTitulo='departamento,pais' required></app-input-acomplete>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group col-sm">
+              <app-input name='direccion' xformErrors={{formErrors.direccion[0]}} formControlName="direccion" xtype="text"
+                xplaceholder="Dirección" xtooltip="Direccion de residencia" titulo="Dirección" xrequired='true'
+                required></app-input>
+            </div>
+
+            <div class="form-group col-sm">
+              <app-input name='celular' xformErrors={{formErrors.celular[0]}} formControlName="celular" xtype="number"
+                xplaceholder="Celular" mPattern="Debe digitar solo números" pattern="[1-9][0-9]*" xtooltip="Celular"
+                titulo="Celular" xrequired='true' required></app-input>
+            </div>
+
+            <div class="form-group col-sm">
+              <app-input name='email' xformErrors={{formErrors.email[0]}} formControlName="email" xtype="email"
+                xplaceholder="Email" xtooltip="Email" titulo="Email" xrequired='true' required></app-input>
+            </div>
+          </div>
+
+          <div class='row'>
+            <div class="form-group col-sm">
+              <app-select name='clase_libreta' xformErrors={{formErrors.clase_libreta[0]}} formControlName="clase_libreta"
+                xrequired='true' [data]="claseLibreta" xval='id_param_general' xopt='descripcion' xtooltip="Obligatorio"
+                titulo="Clase libreta militar" required></app-select>
+            </div>
+
+            <div class="form-group col-sm">
+              <app-input name='distrito' xformErrors={{formErrors.distrito[0]}} formControlName="distrito" xtype="text"
+                xplaceholder="Distrito" xtooltip="Distrito" titulo="Distrito" xrequired='true' required></app-input>
+            </div>
+
+            <div class="col-sm">
+              <app-input-file name='documento_hv' xformErrors={{formErrors.documento_hv[0]}} formControlName="documento_hv" xtooltip="Fotografia"
+                titulo="Fotografia" xaccept='.jpg' input_title='Subir fotografía'></app-input-file>
+            </div>
+          </div>
+
+          <hr />
+          <button type="submit" [disabled]='!form.valid' class="btn btn-success">Guardar</button>
+          <button type="button" class="btn btn-danger" (click)="regresar()" required>Regresar</button>
+        </form>
+
+        <!--FIN FORMULARIO DE REGISTRO PERSONA  [disabled]='!form.valid'-->
+      </div>
+    </div>
+  </section>
+</div>

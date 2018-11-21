@@ -1,0 +1,45 @@
+<section class="container">
+
+  <div class='row'>
+
+    <label class='lbl_name_user'>Bienvenido: <span>{{nombre}}</span></label>
+  </div>
+
+  <div class="row titulo-dash-inscripcion">
+    <div class="col-sm-12">
+      <i class="fa fa-info-circle" aria-hidden="true"></i>
+      <span class="ng-binding">
+        Escoja la sección a diligenciar, recuerde que debe diligenciar todas las secciones
+      </span>
+    </div>
+  </div>
+  <div class="dasboard">
+
+    <div class="row">
+      <div class="col-sm-3 card_hv" [routerLink]="['/hoja_de_vida/persona']">
+        <div>Datos personales</div>
+      </div>
+      <div class="col-sm-3 card_hv" [routerLink]="['/hoja_de_vida/nucleo_familiar']">
+        <div>Nucleo familiar</div>
+      </div>
+      <div class="col-sm-3 card_hv" [routerLink]="['/hoja_de_vida/persona']">
+        <div>Formacion academica</div>
+      </div>
+      <div class="col-sm-3 card_hv" [routerLink]="['/hoja_de_vida/persona']">
+        <div>Idioma extranjero</div>
+      </div>
+      <div class="col-sm-3 card_hv" [routerLink]="['/hoja_de_vida/persona']">
+        <div>Experienca laboral</div>
+      </div>
+      <div class="col-sm-3 card_hv" [routerLink]="['/hoja_de_vida/persona']">
+        <div>Productividad docente</div>
+      </div>
+      <div class="col-sm-3 card_hv" [routerLink]="['/hoja_de_vida/persona']">
+        <div>Documentación</div>
+      </div>
+      <div class="col-sm-3 card_hv_salir" (click)="cerrarSesion()">
+        <div>SALIR</div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+<div class="form-group">
+    <label class="control-label">{{titulo}}<span *ngIf="xrequired == 'true'">*</span>&nbsp;</label>
+    <span class="fa fa-question-circle" tooltip={{xtooltip}}></span>
+    <div></div>
+
+    <div [ngClass]="{validInput : !xformErrors && xrequired == 'true' && valFile, invalidInput: (xformErrors || !valFile) && xdisabled == 'false' && xrequired == 'true'}"  class="uploader">
+        <label for="upload" >
+            <div *ngIf="input_title != ''" class='input_title'>
+                {{input_title}}
+            </div>            
+        </label>
+        <input #input type="file" id="upload" accept={{xaccept}} (change)="imageChange($event)" [disabled]="xdisabled == 'true'">
+
+        <div class='clear_file'  (click)='clear()' >X</div>
+    </div>
+
+    <div *ngIf="xformErrors && isTouch" class='error_style'>
+        * {{ xformErrors }}
+    </div>
+</div>

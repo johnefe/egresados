@@ -1,0 +1,231 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>@coreui/coreui-free-angular-admin-template documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	      <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="./" class="navbar-brand">@coreui/coreui-free-angular-admin-template documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content getting-started">
+                   <div class="content-data">
+
+<h1 id="contributing-to-coreui-free-angular-admin-template">Contributing to CoreUI Free Angular Admin Template</h1>
+<p>Looking to contribute something to CoreUI Free Angular Admin Template? <strong>Here&#39;s how you can help.</strong></p>
+<p>Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved.</p>
+<p>Following these guidelines helps to communicate that you respect the time of the developers managing and developing this open source project. In return, they should reciprocate that respect in addressing your issue or assessing patches and features.</p>
+<h2 id="using-the-issue-tracker">Using the issue tracker</h2>
+<p>The <a href="https://github.com/coreui/coreui-free-angular-admin-template/issues">issue tracker</a> is the preferred channel for <a href="#bug-reports">bug reports</a>, <a href="#feature-requests">features requests</a> and <a href="#pull-requests">submitting pull requests</a>, but please respect the following restrictions:</p>
+<ul>
+<li><p>Please <strong>do not</strong> use the issue tracker for personal support requests.</p>
+</li>
+<li><p>Please <strong>do not</strong> post comments consisting solely of &quot;+1&quot; or &quot;:thumbsup:&quot;.
+Use <a href="https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments">GitHub&#39;s &quot;reactions&quot; feature</a>
+instead.</p>
+</li>
+<li><p>Please <strong>do not</strong> open issues or pull requests regarding the code in  <a href="https://github.com/coreui/coreui"><code>@coreui/coreui</code></a> and <a href="https://github.com/coreui/coreui"><code>@coreui/coreui-angular</code></a> (open them in their respective repositories).</p>
+</li>
+</ul>
+<h2 id="bug-reports">Bug reports</h2>
+<p>A bug is a <em>demonstrable problem</em> that is caused by the code in the repository.
+Good bug reports are extremely helpful, so thanks!</p>
+<p>Guidelines for bug reports:</p>
+<ol start="0">
+<li><p><strong>Validate and lint your code</strong> &mdash; to ensure your problem isn&#39;t caused by a simple error in your own code.</p>
+</li>
+<li><p><strong>Use the GitHub issue search</strong> &mdash; check if the issue has already been reported.</p>
+</li>
+<li><p><strong>Check if the issue has been fixed</strong> &mdash; try to reproduce it using the latest <code>master</code> or development branch in the repository.</p>
+</li>
+<li><p><strong>Isolate the problem</strong> &mdash; ideally create a <a href="https://css-tricks.com/reduced-test-cases/">reduced test case</a> and a live example. <a href="http://jsbin.com/lefey/1/edit?html,output">This JS Bin</a> is a helpful template.</p>
+</li>
+</ol>
+<p>A good bug report shouldn&#39;t leave others needing to chase you up for more
+information. Please try to be as detailed as possible in your report. What is
+your environment? What steps will reproduce the issue? What browser(s) and OS
+experience the problem? Do other browsers show the bug differently? What
+would you expect to be the outcome? All these details will help people to fix
+any potential bugs.</p>
+<p>Example:</p>
+<blockquote>
+<p>Short and descriptive example bug report title</p>
+<p>A summary of the issue and the browser/OS environment in which it occurs. If
+suitable, include the steps required to reproduce the bug.</p>
+<ol>
+<li>This is the first step</li>
+<li>This is the second step</li>
+<li>Further steps, etc.</li>
+</ol>
+<p><code>&lt;url&gt;</code> - a link to the reduced test case</p>
+<p>Any other information you want to share that is relevant to the issue being
+reported. This might include the lines of code that you have identified as
+causing the bug, and potential solutions (and your opinions on their
+merits).</p>
+</blockquote>
+<h2 id="feature-requests">Feature requests</h2>
+<p>Feature requests are welcome. Before opening a feature request, please take a moment to find out whether your idea
+fits with the scope and aims of the project. It&#39;s up to <em>you</em> to make a strong
+case to convince the project&#39;s developers of the merits of this feature. Please
+provide as much detail and context as possible.</p>
+<h2 id="pull-requests">Pull requests</h2>
+<p>Good pull requests—patches, improvements, new features—are a fantastic
+help. They should remain focused in scope and avoid containing unrelated
+commits.</p>
+<p><strong>Please ask first</strong> before embarking on any significant pull request (e.g.
+implementing features, refactoring code, porting to a different language),
+otherwise you risk spending a lot of time working on something that the
+project&#39;s developers might not want to merge into the project.</p>
+<p>Adhering to the following process is the best way to get your work
+included in the project:</p>
+<ol>
+<li><p><a href="https://help.github.com/fork-a-repo/">Fork</a> the project, clone your fork,
+and configure the remotes:</p>
+<div><pre class="line-numbers"><code class="language-bash"># Clone your fork of the repo into the current directory
+git clone https://github.com/&lt;your-username&gt;/free-angular-admin-template.git
+# Navigate to the newly cloned directory
+cd free-angular-admin-template
+# Assign the original repo to a remote called &quot;upstream&quot;
+git remote add upstream https://github.com/coreui/coreui-free-angular-admin-template.git</code></pre></div></li>
+<li><p>If you cloned a while ago, get the latest changes from upstream:</p>
+<div><pre class="line-numbers"><code class="language-bash">git checkout master
+git pull upstream master</code></pre></div></li>
+<li><p>Create a new topic branch (off the main project development branch) to
+contain your feature, change, or fix:</p>
+<div><pre class="line-numbers"><code class="language-bash">git checkout -b &lt;topic-branch-name&gt;</code></pre></div></li>
+<li><p>Commit your changes in logical chunks. Please adhere to these <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">git commit
+message guidelines</a>
+or your code is unlikely to be merged into the main project. Use Git&#39;s
+<a href="https://help.github.com/articles/interactive-rebase">interactive rebase</a>
+feature to tidy up your commits before making them public.</p>
+</li>
+<li><p>Locally merge (or rebase) the upstream development branch into your topic branch:</p>
+<div><pre class="line-numbers"><code class="language-bash">git pull [--rebase] upstream master</code></pre></div></li>
+<li><p>Push your topic branch up to your fork:</p>
+<div><pre class="line-numbers"><code class="language-bash">git push origin &lt;topic-branch-name&gt;</code></pre></div></li>
+<li><p><a href="https://help.github.com/articles/using-pull-requests/">Open a Pull Request</a> with a clear title and description against the <code>master</code> branch.</p>
+</li>
+</ol>
+<p><strong>IMPORTANT</strong>: By submitting a patch, you agree to allow the project owners to license your work under the terms of the <a href="LICENSE">MIT License</a>.</p>
+<h3 id="semantic-git-commit-messages">Semantic Git commit messages</h3>
+<p>Inspired by Sparkbox&#39;s awesome article on <a href="http://seesparkbox.com/foundry/semantic_commit_messages">semantic commit messages</a>. Please use following commit message format.</p>
+<ul>
+<li>chore (updating npm tasks etc; no production code change) -&gt; <code>git test -m &#39;chore: commit-message-here&#39;</code></li>
+<li>docs (changes to documentation) -&gt; <code>git commit -m &#39;docs: commit-message-here&#39;</code></li>
+<li>feat (new feature) -&gt; <code>git commit -m &#39;feat: commit-message-here&#39;</code></li>
+<li>fix (bug fix) -&gt; <code>git commit -m &#39;fix: commit-message-here&#39;</code></li>
+<li>refactor (refactoring production code) -&gt; <code>git commit -m &#39;refactor: commit-message-here&#39;</code></li>
+<li>style (formatting, missing semi colons, etc; no code change) -&gt; <code>git commit -m &#39;style: commit-message-here&#39;</code></li>
+<li>test (adding missing tests, refactoring tests; no production code change) -&gt; <code>git test -m &#39;refactor: commit-message-here&#39;</code></li>
+</ul>
+<h2 id="code-guidelines">Code guidelines</h2>
+<h3 id="html">HTML</h3>
+<p><a href="http://codeguide.co/#html">Adhere to the Code Guide.</a></p>
+<ul>
+<li>Use tags and elements appropriate for an HTML5 doctype (e.g., self-closing tags).</li>
+<li>Use CDNs and HTTPS for third-party JS when possible. We don&#39;t use protocol-relative URLs in this case because they break when viewing the page locally via <code>file://</code>.</li>
+<li>Use <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">WAI-ARIA</a> attributes in documentation examples to promote accessibility.</li>
+</ul>
+<h3 id="css">CSS</h3>
+<p><a href="http://codeguide.co/#css">Adhere to the Code Guide.</a></p>
+<ul>
+<li>When feasible, default color palettes should comply with <a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast">WCAG color contrast guidelines</a>.</li>
+<li>Except in rare cases, don&#39;t remove default <code>:focus</code> styles (via e.g. <code>outline: none;</code>) without providing alternative styles. See <a href="http://a11yproject.com/posts/never-remove-css-outlines">this A11Y Project post</a> for more details.</li>
+</ul>
+<h3 id="js">JS</h3>
+<ul>
+<li>No semicolons (in client-side JS)</li>
+<li>2 spaces (no tabs)</li>
+<li>strict mode</li>
+<li>&quot;Attractive&quot;</li>
+<li>Don&#39;t use <a href="https://github.com/jquery/jquery/blob/master/src/event/alias.js">jQuery event alias convenience methods</a> (such as <code>$().focus()</code>). Instead, use <a href="http://api.jquery.com/trigger/"><code>$().trigger(eventType, ...)</code></a> or <a href="http://api.jquery.com/on/"><code>$().on(eventType, ...)</code></a>, depending on whether you&#39;re firing an event or listening for an event. (For example, <code>$().trigger(&#39;focus&#39;)</code> or <code>$().on(&#39;focus&#39;, function (event) { /* handle focus event */ })</code>) We do this to be compatible with custom builds of jQuery where the event aliases module has been excluded.</li>
+</ul>
+<h2 id="license">License</h2>
+<p>By contributing your code, you agree to license your contribution under the <a href="LICENSE">MIT License</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
+            var COMPODOC_CURRENT_PAGE_URL = 'contributing.html';
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+       <script src="./js/menu-wc.js"></script>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

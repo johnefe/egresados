@@ -1,0 +1,611 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>@coreui/coreui-free-angular-admin-template documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">@coreui/coreui-free-angular-admin-template documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>TablesComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/views2/base/tables.component.ts</code>
+</p>
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>tables.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/app/views2/base/tables.component.ts:6</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+
+@Component({
+  templateUrl: &#x27;tables.component.html&#x27;
+})
+export class TablesComponent {
+
+  constructor() { }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;animated fadeIn&quot;&gt;
+  &lt;div class&#x3D;&quot;row&quot;&gt;
+    &lt;div class&#x3D;&quot;col-lg-6&quot;&gt;
+      &lt;div class&#x3D;&quot;card&quot;&gt;
+        &lt;div class&#x3D;&quot;card-header&quot;&gt;
+          &lt;i class&#x3D;&quot;fa fa-align-justify&quot;&gt;&lt;/i&gt; Simple Table
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;card-body&quot;&gt;
+          &lt;table class&#x3D;&quot;table&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;Username&lt;/th&gt;
+                &lt;th&gt;Date registered&lt;/th&gt;
+                &lt;th&gt;Role&lt;/th&gt;
+                &lt;th&gt;Status&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Samppa Nori&lt;/td&gt;
+                &lt;td&gt;2012/01/01&lt;/td&gt;
+                &lt;td&gt;Member&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-success&quot;&gt;Active&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Estavan Lykos&lt;/td&gt;
+                &lt;td&gt;2012/02/01&lt;/td&gt;
+                &lt;td&gt;Staff&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-danger&quot;&gt;Banned&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Chetan Mohamed&lt;/td&gt;
+                &lt;td&gt;2012/02/01&lt;/td&gt;
+                &lt;td&gt;Admin&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-secondary&quot;&gt;Inactive&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Derick Maximinus&lt;/td&gt;
+                &lt;td&gt;2012/03/01&lt;/td&gt;
+                &lt;td&gt;Member&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-warning&quot;&gt;Pending&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Friderik Dávid&lt;/td&gt;
+                &lt;td&gt;2012/01/21&lt;/td&gt;
+                &lt;td&gt;Staff&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-success&quot;&gt;Active&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+          &lt;ul class&#x3D;&quot;pagination&quot;&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;Prev&lt;/a&gt;&lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item active&quot;&gt;
+              &lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;1&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--/.col--&gt;
+    &lt;div class&#x3D;&quot;col-lg-6&quot;&gt;
+      &lt;div class&#x3D;&quot;card&quot;&gt;
+        &lt;div class&#x3D;&quot;card-header&quot;&gt;
+          &lt;i class&#x3D;&quot;fa fa-align-justify&quot;&gt;&lt;/i&gt; Striped Table
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;card-body&quot;&gt;
+          &lt;table class&#x3D;&quot;table table-striped&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;Username&lt;/th&gt;
+                &lt;th&gt;Date registered&lt;/th&gt;
+                &lt;th&gt;Role&lt;/th&gt;
+                &lt;th&gt;Status&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Yiorgos Avraamu&lt;/td&gt;
+                &lt;td&gt;2012/01/01&lt;/td&gt;
+                &lt;td&gt;Member&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-success&quot;&gt;Active&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Avram Tarasios&lt;/td&gt;
+                &lt;td&gt;2012/02/01&lt;/td&gt;
+                &lt;td&gt;Staff&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-danger&quot;&gt;Banned&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Quintin Ed&lt;/td&gt;
+                &lt;td&gt;2012/02/01&lt;/td&gt;
+                &lt;td&gt;Admin&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-secondary&quot;&gt;Inactive&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Enéas Kwadwo&lt;/td&gt;
+                &lt;td&gt;2012/03/01&lt;/td&gt;
+                &lt;td&gt;Member&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-warning&quot;&gt;Pending&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Agapetus Tadeáš&lt;/td&gt;
+                &lt;td&gt;2012/01/21&lt;/td&gt;
+                &lt;td&gt;Staff&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-success&quot;&gt;Active&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+          &lt;ul class&#x3D;&quot;pagination&quot;&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;Prev&lt;/a&gt;&lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item active&quot;&gt;
+              &lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;1&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--/.col--&gt;
+  &lt;/div&gt;
+  &lt;!--/.row--&gt;
+  &lt;div class&#x3D;&quot;row&quot;&gt;
+    &lt;div class&#x3D;&quot;col-lg-6&quot;&gt;
+      &lt;div class&#x3D;&quot;card&quot;&gt;
+        &lt;div class&#x3D;&quot;card-header&quot;&gt;
+          &lt;i class&#x3D;&quot;fa fa-align-justify&quot;&gt;&lt;/i&gt; Condensed Table
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;card-body&quot;&gt;
+          &lt;table class&#x3D;&quot;table table-sm&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;Username&lt;/th&gt;
+                &lt;th&gt;Date registered&lt;/th&gt;
+                &lt;th&gt;Role&lt;/th&gt;
+                &lt;th&gt;Status&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Carwyn Fachtna&lt;/td&gt;
+                &lt;td&gt;2012/01/01&lt;/td&gt;
+                &lt;td&gt;Member&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-success&quot;&gt;Active&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Nehemiah Tatius&lt;/td&gt;
+                &lt;td&gt;2012/02/01&lt;/td&gt;
+                &lt;td&gt;Staff&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-danger&quot;&gt;Banned&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Ebbe Gemariah&lt;/td&gt;
+                &lt;td&gt;2012/02/01&lt;/td&gt;
+                &lt;td&gt;Admin&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-secondary&quot;&gt;Inactive&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Eustorgios Amulius&lt;/td&gt;
+                &lt;td&gt;2012/03/01&lt;/td&gt;
+                &lt;td&gt;Member&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-warning&quot;&gt;Pending&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Leopold Gáspár&lt;/td&gt;
+                &lt;td&gt;2012/01/21&lt;/td&gt;
+                &lt;td&gt;Staff&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-success&quot;&gt;Active&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+          &lt;ul class&#x3D;&quot;pagination&quot;&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;Prev&lt;/a&gt;&lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item active&quot;&gt;
+              &lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;1&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--/.col--&gt;
+    &lt;div class&#x3D;&quot;col-lg-6&quot;&gt;
+      &lt;div class&#x3D;&quot;card&quot;&gt;
+        &lt;div class&#x3D;&quot;card-header&quot;&gt;
+          &lt;i class&#x3D;&quot;fa fa-align-justify&quot;&gt;&lt;/i&gt; Bordered Table
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;card-body&quot;&gt;
+          &lt;table class&#x3D;&quot;table table-bordered&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;Username&lt;/th&gt;
+                &lt;th&gt;Date registered&lt;/th&gt;
+                &lt;th&gt;Role&lt;/th&gt;
+                &lt;th&gt;Status&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Pompeius René&lt;/td&gt;
+                &lt;td&gt;2012/01/01&lt;/td&gt;
+                &lt;td&gt;Member&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-success&quot;&gt;Active&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Paĉjo Jadon&lt;/td&gt;
+                &lt;td&gt;2012/02/01&lt;/td&gt;
+                &lt;td&gt;Staff&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-danger&quot;&gt;Banned&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Micheal Mercurius&lt;/td&gt;
+                &lt;td&gt;2012/02/01&lt;/td&gt;
+                &lt;td&gt;Admin&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-secondary&quot;&gt;Inactive&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Ganesha Dubhghall&lt;/td&gt;
+                &lt;td&gt;2012/03/01&lt;/td&gt;
+                &lt;td&gt;Member&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-warning&quot;&gt;Pending&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Hiroto Šimun&lt;/td&gt;
+                &lt;td&gt;2012/01/21&lt;/td&gt;
+                &lt;td&gt;Staff&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-success&quot;&gt;Active&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+          &lt;ul class&#x3D;&quot;pagination&quot;&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;Prev&lt;/a&gt;&lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item active&quot;&gt;
+              &lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;1&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+            &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--/.col--&gt;
+  &lt;/div&gt;
+  &lt;!--/.row--&gt;
+  &lt;div class&#x3D;&quot;row&quot;&gt;
+    &lt;div class&#x3D;&quot;col-lg-12&quot;&gt;
+      &lt;div class&#x3D;&quot;card&quot;&gt;
+        &lt;div class&#x3D;&quot;card-header&quot;&gt;
+          &lt;i class&#x3D;&quot;fa fa-align-justify&quot;&gt;&lt;/i&gt; Combined All Table
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;card-body&quot;&gt;
+          &lt;table class&#x3D;&quot;table table-bordered table-striped table-sm&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;Username&lt;/th&gt;
+                &lt;th&gt;Date registered&lt;/th&gt;
+                &lt;th&gt;Role&lt;/th&gt;
+                &lt;th&gt;Status&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Vishnu Serghei&lt;/td&gt;
+                &lt;td&gt;2012/01/01&lt;/td&gt;
+                &lt;td&gt;Member&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-success&quot;&gt;Active&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Zbyněk Phoibos&lt;/td&gt;
+                &lt;td&gt;2012/02/01&lt;/td&gt;
+                &lt;td&gt;Staff&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-danger&quot;&gt;Banned&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Einar Randall&lt;/td&gt;
+                &lt;td&gt;2012/02/01&lt;/td&gt;
+                &lt;td&gt;Admin&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-secondary&quot;&gt;Inactive&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Félix Troels&lt;/td&gt;
+                &lt;td&gt;2012/03/01&lt;/td&gt;
+                &lt;td&gt;Member&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-warning&quot;&gt;Pending&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Aulus Agmundr&lt;/td&gt;
+                &lt;td&gt;2012/01/21&lt;/td&gt;
+                &lt;td&gt;Staff&lt;/td&gt;
+                &lt;td&gt;
+                  &lt;span class&#x3D;&quot;badge badge-success&quot;&gt;Active&lt;/span&gt;
+                &lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+          &lt;nav&gt;
+            &lt;ul class&#x3D;&quot;pagination&quot;&gt;
+              &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;Prev&lt;/a&gt;&lt;/li&gt;
+              &lt;li class&#x3D;&quot;page-item active&quot;&gt;
+                &lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;1&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+              &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+              &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+              &lt;li class&#x3D;&quot;page-item&quot;&gt;&lt;a class&#x3D;&quot;page-link&quot; href&#x3D;&quot;#&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/nav&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--/.col--&gt;
+  &lt;/div&gt;
+  &lt;!--/.row--&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="animated fadeIn">  <div class="row">    <div class="col-lg-6">      <div class="card">        <div class="card-header">          <i class="fa fa-align-justify"></i> Simple Table        </div>        <div class="card-body">          <table class="table">            <thead>              <tr>                <th>Username</th>                <th>Date registered</th>                <th>Role</th>                <th>Status</th>              </tr>            </thead>            <tbody>              <tr>                <td>Samppa Nori</td>                <td>2012/01/01</td>                <td>Member</td>                <td>                  <span class="badge badge-success">Active</span>                </td>              </tr>              <tr>                <td>Estavan Lykos</td>                <td>2012/02/01</td>                <td>Staff</td>                <td>                  <span class="badge badge-danger">Banned</span>                </td>              </tr>              <tr>                <td>Chetan Mohamed</td>                <td>2012/02/01</td>                <td>Admin</td>                <td>                  <span class="badge badge-secondary">Inactive</span>                </td>              </tr>              <tr>                <td>Derick Maximinus</td>                <td>2012/03/01</td>                <td>Member</td>                <td>                  <span class="badge badge-warning">Pending</span>                </td>              </tr>              <tr>                <td>Friderik Dávid</td>                <td>2012/01/21</td>                <td>Staff</td>                <td>                  <span class="badge badge-success">Active</span>                </td>              </tr>            </tbody>          </table>          <ul class="pagination">            <li class="page-item"><a class="page-link" href="#">Prev</a></li>            <li class="page-item active">              <a class="page-link" href="#">1</a>            </li>            <li class="page-item"><a class="page-link" href="#">2</a></li>            <li class="page-item"><a class="page-link" href="#">3</a></li>            <li class="page-item"><a class="page-link" href="#">4</a></li>            <li class="page-item"><a class="page-link" href="#">Next</a></li>          </ul>        </div>      </div>    </div>    <!--/.col-->    <div class="col-lg-6">      <div class="card">        <div class="card-header">          <i class="fa fa-align-justify"></i> Striped Table        </div>        <div class="card-body">          <table class="table table-striped">            <thead>              <tr>                <th>Username</th>                <th>Date registered</th>                <th>Role</th>                <th>Status</th>              </tr>            </thead>            <tbody>              <tr>                <td>Yiorgos Avraamu</td>                <td>2012/01/01</td>                <td>Member</td>                <td>                  <span class="badge badge-success">Active</span>                </td>              </tr>              <tr>                <td>Avram Tarasios</td>                <td>2012/02/01</td>                <td>Staff</td>                <td>                  <span class="badge badge-danger">Banned</span>                </td>              </tr>              <tr>                <td>Quintin Ed</td>                <td>2012/02/01</td>                <td>Admin</td>                <td>                  <span class="badge badge-secondary">Inactive</span>                </td>              </tr>              <tr>                <td>Enéas Kwadwo</td>                <td>2012/03/01</td>                <td>Member</td>                <td>                  <span class="badge badge-warning">Pending</span>                </td>              </tr>              <tr>                <td>Agapetus Tadeáš</td>                <td>2012/01/21</td>                <td>Staff</td>                <td>                  <span class="badge badge-success">Active</span>                </td>              </tr>            </tbody>          </table>          <ul class="pagination">            <li class="page-item"><a class="page-link" href="#">Prev</a></li>            <li class="page-item active">              <a class="page-link" href="#">1</a>            </li>            <li class="page-item"><a class="page-link" href="#">2</a></li>            <li class="page-item"><a class="page-link" href="#">3</a></li>            <li class="page-item"><a class="page-link" href="#">4</a></li>            <li class="page-item"><a class="page-link" href="#">Next</a></li>          </ul>        </div>      </div>    </div>    <!--/.col-->  </div>  <!--/.row-->  <div class="row">    <div class="col-lg-6">      <div class="card">        <div class="card-header">          <i class="fa fa-align-justify"></i> Condensed Table        </div>        <div class="card-body">          <table class="table table-sm">            <thead>              <tr>                <th>Username</th>                <th>Date registered</th>                <th>Role</th>                <th>Status</th>              </tr>            </thead>            <tbody>              <tr>                <td>Carwyn Fachtna</td>                <td>2012/01/01</td>                <td>Member</td>                <td>                  <span class="badge badge-success">Active</span>                </td>              </tr>              <tr>                <td>Nehemiah Tatius</td>                <td>2012/02/01</td>                <td>Staff</td>                <td>                  <span class="badge badge-danger">Banned</span>                </td>              </tr>              <tr>                <td>Ebbe Gemariah</td>                <td>2012/02/01</td>                <td>Admin</td>                <td>                  <span class="badge badge-secondary">Inactive</span>                </td>              </tr>              <tr>                <td>Eustorgios Amulius</td>                <td>2012/03/01</td>                <td>Member</td>                <td>                  <span class="badge badge-warning">Pending</span>                </td>              </tr>              <tr>                <td>Leopold Gáspár</td>                <td>2012/01/21</td>                <td>Staff</td>                <td>                  <span class="badge badge-success">Active</span>                </td>              </tr>            </tbody>          </table>          <ul class="pagination">            <li class="page-item"><a class="page-link" href="#">Prev</a></li>            <li class="page-item active">              <a class="page-link" href="#">1</a>            </li>            <li class="page-item"><a class="page-link" href="#">2</a></li>            <li class="page-item"><a class="page-link" href="#">3</a></li>            <li class="page-item"><a class="page-link" href="#">4</a></li>            <li class="page-item"><a class="page-link" href="#">Next</a></li>          </ul>        </div>      </div>    </div>    <!--/.col-->    <div class="col-lg-6">      <div class="card">        <div class="card-header">          <i class="fa fa-align-justify"></i> Bordered Table        </div>        <div class="card-body">          <table class="table table-bordered">            <thead>              <tr>                <th>Username</th>                <th>Date registered</th>                <th>Role</th>                <th>Status</th>              </tr>            </thead>            <tbody>              <tr>                <td>Pompeius René</td>                <td>2012/01/01</td>                <td>Member</td>                <td>                  <span class="badge badge-success">Active</span>                </td>              </tr>              <tr>                <td>Paĉjo Jadon</td>                <td>2012/02/01</td>                <td>Staff</td>                <td>                  <span class="badge badge-danger">Banned</span>                </td>              </tr>              <tr>                <td>Micheal Mercurius</td>                <td>2012/02/01</td>                <td>Admin</td>                <td>                  <span class="badge badge-secondary">Inactive</span>                </td>              </tr>              <tr>                <td>Ganesha Dubhghall</td>                <td>2012/03/01</td>                <td>Member</td>                <td>                  <span class="badge badge-warning">Pending</span>                </td>              </tr>              <tr>                <td>Hiroto Šimun</td>                <td>2012/01/21</td>                <td>Staff</td>                <td>                  <span class="badge badge-success">Active</span>                </td>              </tr>            </tbody>          </table>          <ul class="pagination">            <li class="page-item"><a class="page-link" href="#">Prev</a></li>            <li class="page-item active">              <a class="page-link" href="#">1</a>            </li>            <li class="page-item"><a class="page-link" href="#">2</a></li>            <li class="page-item"><a class="page-link" href="#">3</a></li>            <li class="page-item"><a class="page-link" href="#">4</a></li>            <li class="page-item"><a class="page-link" href="#">Next</a></li>          </ul>        </div>      </div>    </div>    <!--/.col-->  </div>  <!--/.row-->  <div class="row">    <div class="col-lg-12">      <div class="card">        <div class="card-header">          <i class="fa fa-align-justify"></i> Combined All Table        </div>        <div class="card-body">          <table class="table table-bordered table-striped table-sm">            <thead>              <tr>                <th>Username</th>                <th>Date registered</th>                <th>Role</th>                <th>Status</th>              </tr>            </thead>            <tbody>              <tr>                <td>Vishnu Serghei</td>                <td>2012/01/01</td>                <td>Member</td>                <td>                  <span class="badge badge-success">Active</span>                </td>              </tr>              <tr>                <td>Zbyněk Phoibos</td>                <td>2012/02/01</td>                <td>Staff</td>                <td>                  <span class="badge badge-danger">Banned</span>                </td>              </tr>              <tr>                <td>Einar Randall</td>                <td>2012/02/01</td>                <td>Admin</td>                <td>                  <span class="badge badge-secondary">Inactive</span>                </td>              </tr>              <tr>                <td>Félix Troels</td>                <td>2012/03/01</td>                <td>Member</td>                <td>                  <span class="badge badge-warning">Pending</span>                </td>              </tr>              <tr>                <td>Aulus Agmundr</td>                <td>2012/01/21</td>                <td>Staff</td>                <td>                  <span class="badge badge-success">Active</span>                </td>              </tr>            </tbody>          </table>          <nav>            <ul class="pagination">              <li class="page-item"><a class="page-link" href="#">Prev</a></li>              <li class="page-item active">                <a class="page-link" href="#">1</a>              </li>              <li class="page-item"><a class="page-link" href="#">2</a></li>              <li class="page-item"><a class="page-link" href="#">3</a></li>              <li class="page-item"><a class="page-link" href="#">4</a></li>              <li class="page-item"><a class="page-link" href="#">Next</a></li>            </ul>          </nav>        </div>      </div>    </div>    <!--/.col-->  </div>  <!--/.row--></div></div>'
+    var COMPONENTS = [{'name': 'AlertsComponent', 'selector': ''},{'name': 'AppComponent', 'selector': 'body'},{'name': 'BadgesComponent', 'selector': ''},{'name': 'BrandButtonsComponent', 'selector': ''},{'name': 'ButtonsComponent', 'selector': ''},{'name': 'CardsComponent', 'selector': ''},{'name': 'CarouselsComponent', 'selector': ''},{'name': 'ChartJSComponent', 'selector': ''},{'name': 'CollapsesComponent', 'selector': ''},{'name': 'ColorsComponent', 'selector': ''},{'name': 'CoreUIIconsComponent', 'selector': ''},{'name': 'DashboardComponent', 'selector': ''},{'name': 'DefaultLayoutComponent', 'selector': 'app-dashboard'},{'name': 'DropdownsComponent', 'selector': ''},{'name': 'ExperienciaLaboralComponent', 'selector': 'app-experiencia-laboral'},{'name': 'FlagsComponent', 'selector': ''},{'name': 'FontAwesomeComponent', 'selector': ''},{'name': 'FormacionAcademicaComponent', 'selector': 'app-formacion-academica'},{'name': 'FormsComponent', 'selector': ''},{'name': 'ListadoAspirantesComponent', 'selector': 'app-listado-aspirantes-cupo'},{'name': 'ListadoCuposComponent', 'selector': 'app-listado-cupos'},{'name': 'LoginComponent', 'selector': 'app-dashboard'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ModalsComponent', 'selector': ''},{'name': 'NucleoFamiliarComponent', 'selector': 'app-nucleo-familiar'},{'name': 'P404Component', 'selector': ''},{'name': 'P500Component', 'selector': ''},{'name': 'PaginationsComponent', 'selector': ''},{'name': 'PersonaComponent', 'selector': 'app-persona'},{'name': 'PersonalComponent', 'selector': 'app-personal'},{'name': 'PopoversComponent', 'selector': ''},{'name': 'ProcesoArchivoComponent', 'selector': 'app-proceso-archivo'},{'name': 'ProgressComponent', 'selector': ''},{'name': 'PruebasComponent', 'selector': 'app-pruebas'},{'name': 'RegisterComponent', 'selector': 'app-dashboard'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'SimpleLineIconsComponent', 'selector': ''},{'name': 'SolicitudComponent', 'selector': 'app-solicitud'},{'name': 'SwitchesComponent', 'selector': ''},{'name': 'TablesComponent', 'selector': ''},{'name': 'TabsComponent', 'selector': ''},{'name': 'TooltipsComponent', 'selector': ''},{'name': 'TypographyComponent', 'selector': ''},{'name': 'WidgetsComponent', 'selector': ''}];
+    var DIRECTIVES = [{'name': 'NumberOnlyDirective', 'selector': '[myNumberOnly]'},{'name': 'UppercaseDirective', 'selector': '[ngModel][uppercase]'}];
+    var ACTUAL_COMPONENT = {'name': 'TablesComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'TablesComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

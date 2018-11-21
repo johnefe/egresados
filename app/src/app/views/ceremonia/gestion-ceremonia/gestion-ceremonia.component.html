@@ -1,0 +1,221 @@
+<div>
+  <div class="ge-header">
+    <div class="ide">
+      <i class="fa fa-institution" aria-hidden="true"></i>
+      Información ceremonia
+    </div>
+  </div>
+  <section class="content">
+    <div class="card border-primary">
+      <div class="card-header">
+
+        <h5><i class="fa fa-bookmark"></i> Ceremonia activa </h5>
+
+      </div>
+      <div class="card-body">
+
+        <div class="col-sm-12 row">
+          <div class="col-sm-3">
+            <div class="card-body p-0 d-flex align-items-center col-sm-6">
+              <i class="fa fa-graduation-cap bg-success p-4 font-2xl mr-3"></i>
+              <div>
+                <div class="text-value-sm text-primary">326</div>
+                <div class="text-muted text-uppercase font-weight-bold small">Estudiantes pregrado</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card-body p-0 d-flex align-items-center col-sm-6 ">
+              <i class="fa fa-graduation-cap bg-warning p-4 font-2xl mr-3"></i>
+              <div>
+                <div class="text-value-sm text-primary">120</div>
+                <div class="text-muted text-uppercase font-weight-bold small">Estudiantes posgrado</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 form-group">
+            <div class="col-sm-12">
+
+              <label style="font-size: 13px"><i class="fa fa-calendar" aria-hidden="true"></i> Fecha de grado:
+                {{data.fecha_ceremonia}}</label>
+            </div>
+            <div class="col-sm-12">
+              <label style="font-size: 13px"><i class="fa fa-institution" aria-hidden="true"></i> Lugar del evento:
+                Auditorio Luis santander</label>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="box box-primary">
+      <div class="box-body">
+        <div class="col-sm-12">
+          <h5><i class="fa fa-users"></i> Directivos mesa de honor</h5>
+        </div>
+        <br>
+        <div class="col-md-12 row">
+          <div class="col-md-5 ">
+
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Rector (titular):</label>
+              <input class="col-md-6 form-control altura" type="text" placeholder="Rector titular" readonly>
+            </div>
+
+            <div div class="form-group row">
+
+              <label class="col-md-3 col-form-label">Rector (encargado):</label>
+              <input class=" col-md-6 form-control altura btnrt" type="text" placeholder="Rector encargado">
+
+              <button class="btn btn-primary stylebtn" tooltip="Asignar" type="button" data-toggle="modal" data-target="#primaryModal"
+                (click)="detalles(modalDetalle)"><i class="fa fa-edit centraricono"></i></button>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-7">
+
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label">Secretario General (titular):</label>
+              <input class="col-md-4 form-control altura" type="text" placeholder="Rector titular" readonly>
+            </div>
+
+            <div div class="form-group row">
+              <label class="col-md-3 col-form-label">Secretario General (encargado):</label>
+              <input class=" col-md-4 form-control altura" type="text" placeholder="Secretario encargado">
+              <button class="btn btn-primary stylebtn" title="Asignar encargado"><i class="fa fa-edit centraricono"></i></button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-7">
+
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label">Vicerrectora de posgrados</label>
+            <input class="col-md-4 form-control altura" type="text" placeholder="Vicerrectora" readonly>
+          </div>
+        </div>
+        <hr>
+
+        <div class="col-sm-12">
+          <div class="row">
+            <div class="col-sm-6">
+              <h6><b>Listado de decanos</b></h6>
+            </div>
+            <div class="col-sm-6 text-right">
+              <button class="btn btn-primary altura centrarbtnint" title="Editar"><i class="fa fa-align-left"> Cargar
+                  decanos</i></button>
+              <button class="btn btn-success altura centrarbtnint2" title="Editar"><i class="fa fa-plus">Agregar</i></button>
+            </div>
+          </div>
+
+          <br>
+          <table class="table table-responsive-sm table-bordered table-striped table-sm">
+            <thead>
+              <tr>
+                <th>Decano</th>
+                <th>Facultad</th>
+                <th>Cargo</th>
+                <th>Opciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="width: 13%">{{decanos.nombres}}</td>
+                <td style="width: 10%">{{decanos.facultad}}</td>
+                <td style="width: 5%">Encargado - Titular</td>
+                <td style="width: 2%">
+                  <button class="btn btn-primary" title="Editar"><i class="fa fa-edit"></i></button>
+                  &nbsp;
+                  <button class="btn btn-danger" title="Editar"><i class="fa fa-trash-o"></i></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal para agregar un rector encargado -->
+    <ng-template #modalDetalle>
+      <div class="modal-header bg-info">
+        <h4 class="modal-title pull-left"><strong>Rector encargado:</strong></h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true"><i class="fa fa-times color-blanco"></i></span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <form #ceremoniaForm="ngForm" name='ceremoniaForm' [formGroup]="form" (submit)="guardar()">
+          <div class='col-sm'>
+            <app-input-date name='fecha_ceremonia' xformErrors={{formErrors.fecha_ceremonia[0]}} formControlName="fecha_ceremonia"
+              xrequired='true' xtype="text" xplaceholder="Fecha de ceremonia" xtooltip="Obligatorio" titulo="Fecha de expedición"
+              required></app-input-date>
+          </div>
+          <div class='col-sm'>
+            <app-input-acomplete name='proposicion_pregrado' xformErrors={{formErrors.proposicion_pregrado[0]}}
+              formControlName="proposicion_pregrado" xrequired='true' xtype="text" xplaceholder="Fecha proposicion"
+              xtooltip="Obligatorio" titulo="Proposicion Pregrado" ruta='getCiudades' listTitulo='departamento'
+              listSubTitulo='departamento,pais' required></app-input-acomplete>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+
+        <div class="col-sm-6">
+          <button class="btn btn-success"><i class="fa fa-check"></i>
+            Aprobar</button>&nbsp;
+
+        </div>
+        <div class="col-sm-6 text-right">
+          <button class="btn btn-danger buttonMod" (click)="modalRef.hide()"><i class="fa fa-times"></i> Cerrar</button>
+        </div>
+      </div>
+    </ng-template>
+    <!-- Fin modal agregar rector encargado -->
+
+
+
+
+  </section>
+
+</div>
+
+<!--FORMULARIO DE REGISTRO PERSONA -->
+<!-- <form #ceremoniaForm="ngForm" name='personaForm' [formGroup]="form" (submit)="guardar()">
+          {{form.value |json}}
+          <div class='row'>
+            <div class='col-sm'>
+              <app-input name='num_identificacion' xformErrors={{formErrors.num_identificacion[0]}} formControlName="num_identificacion"
+                xrequired='true' xtype="text" xplaceholder="Identificación" xtooltip="Obligatorio" titulo="Identificación"
+                mPattern="Debe digitar solo números" pattern="[1-9][0-9]*" required></app-input>
+            </div>
+
+            <div class='col-sm'>
+              <app-input-date name='fecha_expedicion' xformErrors={{formErrors.fecha_expedicion[0]}} formControlName="fecha_expedicion"
+                xrequired='true' xtype="text" xplaceholder="Fecha de expedición" xtooltip="Obligatorio" titulo="Fecha de expedición"
+                required></app-input-date>
+            </div>
+
+            <div class='col-sm'>
+              <app-select name='estado_civil' xformErrors={{formErrors.estado_civil[0]}} formControlName="estado_civil"
+                xrequired='true' [data]="estadoCivil" xval='id' xopt='estado' xtooltip="Obligatorio" titulo="Estado civil"
+                required></app-select>
+            </div>
+
+            <div class='col-sm'>
+              <app-input-acomplete name='ciudad_nacimiento' xformErrors={{formErrors.ciudad_nacimiento[0]}}
+                formControlName="ciudad_nacimiento" xrequired='true' xtype="text" xplaceholder="Ciudad de nacimiento"
+                xtooltip="Obligatorio" titulo="Ciudad de nacimiento" ruta='getCiudades' listTitulo='departamento'
+                listSubTitulo='departamento,pais' required></app-input-acomplete>
+            </div>
+
+          </div>
+          <button type="submit" [disabled]='!form.valid' class="btn btn-success">Guardar</button>
+        </form> -->

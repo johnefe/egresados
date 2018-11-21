@@ -1,0 +1,15 @@
+<div class="form-group">
+    <label class="control-label">{{titulo}}<span *ngIf="xrequired == 'true'">*</span>&nbsp;</label>
+    <span class="fa fa-question-circle" tooltip={{xtooltip}}></span>
+
+
+    <input #input type="{{xtype}}" [ngClass]="{validInput : !xformErrors && isTouch, invalidInput: (xformErrors || !isTouch) && xdisabled == 'false' }"
+        class="form-control" (onHidden)="changeInput(input.value)" placeholder="{{xplaceholder}}" (click)="changeInput(input.value);isTouch=true"
+        [disabled]="xdisabled == 'true'"  value={{inputVal}} bsDatepicker readonly>
+
+    <div *ngIf="xformErrors && isTouch" class='error_style'>
+        <div *ngIf="xformErrors !='_';then content else other_content"></div>
+        <ng-template #content>* {{ xformErrors }}</ng-template>
+        <ng-template #other_content>* {{ mPattern }}</ng-template>
+    </div>
+</div>

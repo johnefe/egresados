@@ -1,0 +1,307 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>@coreui/coreui-free-angular-admin-template documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">@coreui/coreui-free-angular-admin-template documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>TabsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/views2/base/tabs.component.ts</code>
+</p>
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>tabs.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/app/views2/base/tabs.component.ts:6</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+
+@Component({
+  templateUrl: &#x27;tabs.component.html&#x27;
+})
+export class TabsComponent {
+
+  constructor() { }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;animated fadeIn&quot;&gt;
+  &lt;div class&#x3D;&quot;row&quot;&gt;
+    &lt;div class&#x3D;&quot;col-md-6 mb-4&quot;&gt;
+      &lt;!-- Nav tabs --&gt;
+      &lt;tabset&gt;
+        &lt;tab heading&#x3D;&quot;Home&quot;&gt;
+          1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        &lt;/tab&gt;
+        &lt;tab heading&#x3D;&quot;Profile&quot;&gt;
+          2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        &lt;/tab&gt;
+        &lt;tab heading&#x3D;&quot;Messages&quot;&gt;
+          3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        &lt;/tab&gt;
+      &lt;/tabset&gt;
+    &lt;/div&gt;&lt;!--/.col--&gt;
+    &lt;div class&#x3D;&quot;col-md-6 mb-4&quot;&gt;
+      &lt;!-- Nav tabs --&gt;
+      &lt;tabset&gt;
+        &lt;tab&gt;
+          &lt;ng-template tabHeading&gt;&lt;i class&#x3D;&quot;icon-calculator&quot;&gt;&lt;/i&gt;&lt;/ng-template&gt;
+          2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        &lt;/tab&gt;
+        &lt;tab&gt;
+          &lt;ng-template tabHeading&gt;&lt;i class&#x3D;&quot;icon-basket-loaded&quot;&gt;&lt;/i&gt;&lt;/ng-template&gt;
+          3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        &lt;/tab&gt;
+        &lt;tab&gt;
+          &lt;ng-template tabHeading&gt;&lt;i class&#x3D;&quot;icon-pie-chart&quot;&gt;&lt;/i&gt;&lt;/ng-template&gt;
+          4. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        &lt;/tab&gt;
+      &lt;/tabset&gt;
+    &lt;/div&gt;&lt;!--/.col--&gt;
+    &lt;div class&#x3D;&quot;col-md-6 mb-4&quot;&gt;
+      &lt;!-- Nav tabs --&gt;
+      &lt;tabset&gt;
+        &lt;tab&gt;
+          &lt;ng-template tabHeading&gt;&lt;i class&#x3D;&quot;icon-calculator&quot;&gt;&lt;/i&gt; Calculator&lt;/ng-template&gt;
+          2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        &lt;/tab&gt;
+        &lt;tab&gt;
+          &lt;ng-template tabHeading&gt;&lt;i class&#x3D;&quot;icon-basket-loaded&quot;&gt;&lt;/i&gt; Shoping cart&lt;/ng-template&gt;
+          3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        &lt;/tab&gt;
+        &lt;tab&gt;
+          &lt;ng-template tabHeading&gt;&lt;i class&#x3D;&quot;icon-pie-chart&quot;&gt;&lt;/i&gt; Charts&lt;/ng-template&gt;
+          4. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        &lt;/tab&gt;
+      &lt;/tabset&gt;
+    &lt;/div&gt;&lt;!--/.col--&gt;
+    &lt;div class&#x3D;&quot;col-md-6 mb-4&quot;&gt;
+      &lt;!-- Nav tabs --&gt;
+      &lt;tabset&gt;
+        &lt;tab&gt;
+          &lt;ng-template tabHeading&gt;&lt;i class&#x3D;&quot;icon-list&quot;&gt;&lt;/i&gt; Menu &amp;nbsp;&lt;span class&#x3D;&quot;badge badge-success&quot;&gt;New&lt;/span&gt;&lt;/ng-template&gt;
+          1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        &lt;/tab&gt;
+        &lt;tab&gt;
+          &lt;ng-template tabHeading&gt;&lt;i class&#x3D;&quot;icon-calculator&quot;&gt;&lt;/i&gt; Calculator &amp;nbsp;&lt;span class&#x3D;&quot;badge badge-pill badge-danger&quot;&gt;29&lt;/span&gt;&lt;/ng-template&gt;
+          2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        &lt;/tab&gt;
+        &lt;tab&gt;
+          &lt;ng-template tabHeading&gt;&lt;i class&#x3D;&quot;icon-pie-chart&quot;&gt;&lt;/i&gt; Charts&lt;/ng-template&gt;
+          4. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        &lt;/tab&gt;
+      &lt;/tabset&gt;
+    &lt;/div&gt;&lt;!--/.col--&gt;
+  &lt;/div&gt;&lt;!--/.row--&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="animated fadeIn">  <div class="row">    <div class="col-md-6 mb-4">      <!-- Nav tabs -->      <tabset>        <tab heading="Home">          1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        </tab>        <tab heading="Profile">          2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        </tab>        <tab heading="Messages">          3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        </tab>      </tabset>    </div><!--/.col-->    <div class="col-md-6 mb-4">      <!-- Nav tabs -->      <tabset>        <tab>          <ng-template tabHeading><i class="icon-calculator"></i></ng-template>          2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        </tab>        <tab>          <ng-template tabHeading><i class="icon-basket-loaded"></i></ng-template>          3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        </tab>        <tab>          <ng-template tabHeading><i class="icon-pie-chart"></i></ng-template>          4. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        </tab>      </tabset>    </div><!--/.col-->    <div class="col-md-6 mb-4">      <!-- Nav tabs -->      <tabset>        <tab>          <ng-template tabHeading><i class="icon-calculator"></i> Calculator</ng-template>          2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        </tab>        <tab>          <ng-template tabHeading><i class="icon-basket-loaded"></i> Shoping cart</ng-template>          3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        </tab>        <tab>          <ng-template tabHeading><i class="icon-pie-chart"></i> Charts</ng-template>          4. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        </tab>      </tabset>    </div><!--/.col-->    <div class="col-md-6 mb-4">      <!-- Nav tabs -->      <tabset>        <tab>          <ng-template tabHeading><i class="icon-list"></i> Menu &nbsp;<span class="badge badge-success">New</span></ng-template>          1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        </tab>        <tab>          <ng-template tabHeading><i class="icon-calculator"></i> Calculator &nbsp;<span class="badge badge-pill badge-danger">29</span></ng-template>          2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        </tab>        <tab>          <ng-template tabHeading><i class="icon-pie-chart"></i> Charts</ng-template>          4. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        </tab>      </tabset>    </div><!--/.col-->  </div><!--/.row--></div></div>'
+    var COMPONENTS = [{'name': 'AlertsComponent', 'selector': ''},{'name': 'AppComponent', 'selector': 'body'},{'name': 'BadgesComponent', 'selector': ''},{'name': 'BrandButtonsComponent', 'selector': ''},{'name': 'ButtonsComponent', 'selector': ''},{'name': 'CardsComponent', 'selector': ''},{'name': 'CarouselsComponent', 'selector': ''},{'name': 'ChartJSComponent', 'selector': ''},{'name': 'CollapsesComponent', 'selector': ''},{'name': 'ColorsComponent', 'selector': ''},{'name': 'CoreUIIconsComponent', 'selector': ''},{'name': 'DashboardComponent', 'selector': ''},{'name': 'DefaultLayoutComponent', 'selector': 'app-dashboard'},{'name': 'DropdownsComponent', 'selector': ''},{'name': 'ExperienciaLaboralComponent', 'selector': 'app-experiencia-laboral'},{'name': 'FlagsComponent', 'selector': ''},{'name': 'FontAwesomeComponent', 'selector': ''},{'name': 'FormacionAcademicaComponent', 'selector': 'app-formacion-academica'},{'name': 'FormsComponent', 'selector': ''},{'name': 'ListadoAspirantesComponent', 'selector': 'app-listado-aspirantes-cupo'},{'name': 'ListadoCuposComponent', 'selector': 'app-listado-cupos'},{'name': 'LoginComponent', 'selector': 'app-dashboard'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ModalsComponent', 'selector': ''},{'name': 'NucleoFamiliarComponent', 'selector': 'app-nucleo-familiar'},{'name': 'P404Component', 'selector': ''},{'name': 'P500Component', 'selector': ''},{'name': 'PaginationsComponent', 'selector': ''},{'name': 'PersonaComponent', 'selector': 'app-persona'},{'name': 'PersonalComponent', 'selector': 'app-personal'},{'name': 'PopoversComponent', 'selector': ''},{'name': 'ProcesoArchivoComponent', 'selector': 'app-proceso-archivo'},{'name': 'ProgressComponent', 'selector': ''},{'name': 'PruebasComponent', 'selector': 'app-pruebas'},{'name': 'RegisterComponent', 'selector': 'app-dashboard'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'SimpleLineIconsComponent', 'selector': ''},{'name': 'SolicitudComponent', 'selector': 'app-solicitud'},{'name': 'SwitchesComponent', 'selector': ''},{'name': 'TablesComponent', 'selector': ''},{'name': 'TabsComponent', 'selector': ''},{'name': 'TooltipsComponent', 'selector': ''},{'name': 'TypographyComponent', 'selector': ''},{'name': 'WidgetsComponent', 'selector': ''}];
+    var DIRECTIVES = [{'name': 'NumberOnlyDirective', 'selector': '[myNumberOnly]'},{'name': 'UppercaseDirective', 'selector': '[ngModel][uppercase]'}];
+    var ACTUAL_COMPONENT = {'name': 'TabsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'TabsComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

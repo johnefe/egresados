@@ -1,0 +1,44 @@
+.uploader input {
+    display: none;
+}
+
+#upload {
+    display: none;
+}
+
+.uploader {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    
+    height: calc(2.0625rem + 2px);
+    border-radius: 5px;
+}
+.uploader label{
+    min-width: 150px;
+    max-width: 300px;
+}
+
+.input_title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.input_title:hover {
+    font-size: medium;
+}
+
+.clear_file {
+    text-align: center;
+    color: #e20101;
+    float: right;
+}
+
+.clear_file:hover {
+    font-size: medium;
+}

@@ -1,0 +1,68 @@
+<div>
+  <div class="ge-header">
+    <div class="ide">
+      <i class="fa fa-user" aria-hidden="true"></i>
+      Nucleo familiar
+    </div>
+  </div>
+  <section class="content">
+
+    <div class="box box-primary">
+      <div class="box-body">
+        <button class="btn btn-success">Agregar persona</button>
+        <button type="button" class="btn btn-danger" [routerLink]="['/hoja_de_vida/principal']">Regresar</button>
+        <hr />
+        <table class='table'>
+          <thead>
+            <tr>
+              <th>Identificación</th>
+              <th>Nombre</th>
+              <th>Sexo biologico</th>
+              <th>Email</th>
+              <th>Celular</th>
+              <th>Dirección</th>
+              <th>Localización</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of nucleoFam">
+              <td>{{item}}</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="box-body">
+        <!--FORMULARIO DE REGISTRO PERSONA -->
+        <form #familiaForm="ngForm" name='familiaForm' [formGroup]="form" (submit)="guardar()">
+          <div class='row'>
+            <div class='col-sm'>
+                <!-- <app-select name='id_tipo_pariente' xformErrors={{formErrors.id_tipo_pariente[0]}} formControlName="id_tipo_pariente"
+                xrequired='true' [data]="tipoPariente" xval='id_tipo_pariente' xopt='descripcion' xtooltip="Obligatorio"
+                titulo="Parentesco" required></app-select> -->
+
+              <!-- <app-select name='tipo_documento' xformErrors={{formErrors.tipo_documento[0]}} formControlName="tipo_documento"
+                xrequired='true' [data]="tipoIdentificacion" xval='id_param_general' xopt='descripcion' xtooltip="Obligatorio"
+                titulo="Tipo identificación" required></app-select> -->
+            </div>
+          </div>
+
+
+          <hr />
+          <button type="submit" [disabled]='!form.valid' class="btn btn-success">Guardar</button>
+          <button type="button" class="btn btn-danger" (click)="cancelar()">Cancelar</button>
+        </form>
+
+        <!--FIN FORMULARIO DE REGISTRO PERSONA  [disabled]='!form.valid'-->
+
+      </div>
+    </div>
+  </section>
+</div>

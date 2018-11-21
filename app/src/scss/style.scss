@@ -1,0 +1,164 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles
+@import "~@coreui/coreui/scss/coreui";
+
+// If you want to add something do it here
+@import "custom";
+
+@import "../../node_modules/ngx-bootstrap/datepicker/bs-datepicker.css ";
+
+
+/*----ESTILOS PARA EL HEADER----*/
+.ge-header {
+  background-color: rgb(12, 26, 44);
+  color: #fafafa;
+  height: 56px;
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.ide {
+  margin-left: 20px;
+  padding-top: 18px;
+}
+
+@media (max-width: 1400px) {
+  .ide {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 800px) {
+  .ide {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .ide {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .ide {
+    font-size: 25px;
+  }
+}
+/*----FIN ESTILOS PARA EL HEADER----*/
+
+/*----ESTILOS GENERAL----*/
+.main {
+  background-color: #ecf0f5;
+}
+.content {
+  margin-left: -30px;
+  margin-right: -30px;
+  padding: 15px;
+}
+
+.box {
+  position: relative;
+  border-radius: 3px;
+  background: #ffffff;
+  border-top: 3px solid #d2d6de;
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.box-header.with-border {
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.box-header .box-title {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0;
+  line-height: 1;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.box-header {
+  color: #444;
+  display: block;
+  padding: 10px;
+  position: relative;
+}
+
+.box-header .box-title {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0;
+  line-height: 1;
+}
+
+.box-body {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 10px;
+}
+
+.box-primary {
+  border-top-color: #3c8dbc;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 550;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.error_style{
+  font-size: 9pt;
+  color: red;
+}
+/*----FIN ESTILOS GENERAL----*/
+
+/*----BUTONES-----*/
+.btn_hover:hover {
+  transform: scale(1.1);
+}
+/*----FIN BOTONES----*/
+
+/*-----INPUTS VALID-----*/
+
+.invalidInput{
+  border-left: 5px solid #a94442 !important;
+}
+.validInput{
+  border-left: 5px solid #42a948 !important;
+}
+
+/*----END INPUTS VALID----*/
+.altura{
+  height:30px !important;
+}
+.stylebtn{
+  height:28px !important;
+  margin-left: 6px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+
+}
+.centraricono
+{
+  float: left;
+  margin-left: 2px !important;
+  margin-top: 1px !important;
+}
+
+.btnrt{
+  margin-left: 3px !important;
+}
+
+

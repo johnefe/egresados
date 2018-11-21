@@ -1,0 +1,1082 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>@coreui/coreui-free-angular-admin-template documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">@coreui/coreui-free-angular-admin-template documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>BrandButtonsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/views2/buttons/brand-buttons.component.ts</code>
+</p>
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>brand-buttons.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/app/views2/buttons/brand-buttons.component.ts:6</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+
+@Component({
+  templateUrl: &#x27;brand-buttons.component.html&#x27;
+})
+export class BrandButtonsComponent {
+
+  constructor() { }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;animated fadeIn&quot;&gt;
+  &lt;div class&#x3D;&quot;row&quot;&gt;
+    &lt;div class&#x3D;&quot;col-12&quot;&gt;
+      &lt;div class&#x3D;&quot;card&quot;&gt;
+        &lt;div class&#x3D;&quot;card-header&quot;&gt;
+          &lt;strong&gt;Brand Buttons&lt;/strong&gt;
+          &lt;small&gt;Usage ex.&lt;/small&gt;
+          &lt;code style&#x3D;&quot;text-transform:lowercase&quot;&gt;&amp;lt;button class&#x3D;&quot;btn btn-brand btn-facebook&quot;&amp;gt;&amp;lt;span&amp;gt;Facebook&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt;&lt;/code&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;card-body&quot;&gt;
+          &lt;h6&gt;Size Small
+            &lt;small&gt;Add this class
+              &lt;code&gt;.btn-sm&lt;/code&gt;
+            &lt;/small&gt;
+          &lt;/h6&gt;
+          &lt;p&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-facebook&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Facebook&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-twitter&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Twitter&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-linkedin&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;LinkedIn&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-flickr&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-flickr&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Flickr&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-tumblr&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-tumblr&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Tumblr&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-xing&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-xing&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Xing&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-github&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-github&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Github&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-html5&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-html5&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;HTML5&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-openid&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-openid&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;OpenID&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-stack-overflow&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-stack-overflow&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;StackOverflow&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-css3&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-css3&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;CSS3&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-youtube&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-youtube&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;YouTube&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-dribbble&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Dribbble&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-google-plus&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Google+&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-instagram&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Instagram&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-pinterest&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-pinterest&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Pinterest&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-vk&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-vk&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;VK&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-yahoo&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-yahoo&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Yahoo&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-behance&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-behance&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Behance&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-dropbox&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-dropbox&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Dropbox&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-reddit&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-reddit&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Reddit&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-spotify&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-spotify&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Spotify&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-vine&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-vine&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Vine&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-foursquare&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-foursquare&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Forsquare&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-vimeo&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-vimeo&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Vimeo&lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/p&gt;
+          &lt;h6&gt;Size Normal&lt;/h6&gt;
+          &lt;p&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-facebook&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Facebook&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-twitter&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Twitter&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-linkedin&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;LinkedIn&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-flickr&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-flickr&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Flickr&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-tumblr&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-tumblr&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Tumblr&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-xing&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-xing&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Xing&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-github&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-github&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Github&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-html5&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-html5&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;HTML5&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-openid&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-openid&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;OpenID&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-stack-overflow&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-stack-overflow&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;StackOverflow&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-css3&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-css3&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;CSS3&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-youtube&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-youtube&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;YouTube&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-dribbble&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Dribbble&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-google-plus&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Google+&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-instagram&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Instagram&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-pinterest&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-pinterest&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Pinterest&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-vk&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-vk&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;VK&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-yahoo&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-yahoo&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Yahoo&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-behance&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-behance&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Behance&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-dropbox&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-dropbox&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Dropbox&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-reddit&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-reddit&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Reddit&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-spotify&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-spotify&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Spotify&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-vine&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-vine&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Vine&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-foursquare&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-foursquare&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Forsquare&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-vimeo&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-vimeo&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Vimeo&lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/p&gt;
+          &lt;h6&gt;Size Large
+            &lt;small&gt;Add this class
+              &lt;code&gt;.btn-lg&lt;/code&gt;
+            &lt;/small&gt;
+          &lt;/h6&gt;
+          &lt;p&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-facebook&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Facebook&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-twitter&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Twitter&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-linkedin&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;LinkedIn&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-flickr&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-flickr&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Flickr&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-tumblr&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-tumblr&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Tumblr&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-xing&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-xing&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Xing&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-github&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-github&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Github&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-html5&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-html5&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;HTML5&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-openid&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-openid&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;OpenID&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-stack-overflow&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-stack-overflow&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;StackOverflow&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-css3&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-css3&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;CSS3&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-youtube&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-youtube&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;YouTube&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-dribbble&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Dribbble&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-google-plus&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Google+&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-instagram&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Instagram&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-pinterest&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-pinterest&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Pinterest&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-vk&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-vk&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;VK&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-yahoo&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-yahoo&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Yahoo&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-behance&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-behance&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Behance&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-dropbox&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-dropbox&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Dropbox&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-reddit&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-reddit&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Reddit&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-spotify&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-spotify&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Spotify&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-vine&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-vine&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Vine&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-foursquare&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-foursquare&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Forsquare&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-vimeo&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-vimeo&quot;&gt;&lt;/i&gt;
+              &lt;span&gt;Vimeo&lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--/.col--&gt;
+
+    &lt;div class&#x3D;&quot;col-12&quot;&gt;
+      &lt;div class&#x3D;&quot;card&quot;&gt;
+        &lt;div class&#x3D;&quot;card-header&quot;&gt;
+          &lt;strong&gt;Brand Buttons&lt;/strong&gt;
+          &lt;small&gt;Only icons. Usage ex.&lt;/small&gt;
+          &lt;code style&#x3D;&quot;text-transform:lowercase&quot;&gt;&amp;lt;button class&#x3D;&quot;btn btn-brand btn-facebook&quot;&amp;gt;&amp;lt;span&amp;gt;Facebook&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt;&lt;/code&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;card-body&quot;&gt;
+          &lt;h6&gt;Size Small
+            &lt;small&gt;Add this class
+              &lt;code&gt;.btn-sm&lt;/code&gt;
+            &lt;/small&gt;
+          &lt;/h6&gt;
+          &lt;p&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-facebook&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-twitter&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-linkedin&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-flickr&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-flickr&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-tumblr&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-tumblr&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-xing&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-xing&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-github&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-github&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-html5&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-html5&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-openid&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-openid&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-stack-overflow&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-stack-overflow&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-css3&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-css3&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-youtube&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-youtube&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-dribbble&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-google-plus&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-instagram&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-pinterest&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-pinterest&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-vk&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-vk&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-yahoo&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-yahoo&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-behance&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-behance&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-dropbox&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-dropbox&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-reddit&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-reddit&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-spotify&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-spotify&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-vine&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-vine&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-foursquare&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-foursquare&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-vimeo&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-vimeo&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+          &lt;/p&gt;
+          &lt;h6&gt;Size Normal&lt;/h6&gt;
+          &lt;p&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-facebook&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-twitter&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-linkedin&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-flickr&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-flickr&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-tumblr&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-tumblr&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-xing&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-xing&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-github&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-github&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-html5&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-html5&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-openid&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-openid&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-stack-overflow&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-stack-overflow&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-css3&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-css3&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-youtube&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-youtube&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-dribbble&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-google-plus&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-instagram&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-pinterest&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-pinterest&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-vk&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-vk&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-yahoo&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-yahoo&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-behance&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-behance&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-dropbox&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-dropbox&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-reddit&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-reddit&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-spotify&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-spotify&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-vine&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-vine&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-foursquare&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-foursquare&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-vimeo&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-vimeo&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+          &lt;/p&gt;
+          &lt;h6&gt;Size Large
+            &lt;small&gt;Add this class
+              &lt;code&gt;.btn-lg&lt;/code&gt;
+            &lt;/small&gt;
+          &lt;/h6&gt;
+          &lt;p&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-facebook&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-twitter&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-linkedin&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-flickr&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-flickr&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-tumblr&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-tumblr&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-xing&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-xing&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-github&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-github&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-html5&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-html5&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-openid&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-openid&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-stack-overflow&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-stack-overflow&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-css3&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-css3&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-youtube&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-youtube&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-dribbble&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-dribbble&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-google-plus&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-instagram&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-instagram&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-pinterest&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-pinterest&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-vk&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-vk&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-yahoo&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-yahoo&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-behance&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-behance&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-dropbox&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-dropbox&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-reddit&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-reddit&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-spotify&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-spotify&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-vine&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-vine&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-foursquare&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-foursquare&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-vimeo&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;i class&#x3D;&quot;fa fa-vimeo&quot;&gt;&lt;/i&gt;
+            &lt;/button&gt;
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--/.col--&gt;
+
+    &lt;div class&#x3D;&quot;col-12&quot;&gt;
+      &lt;div class&#x3D;&quot;card&quot;&gt;
+        &lt;div class&#x3D;&quot;card-header&quot;&gt;
+          &lt;strong&gt;Brand Buttons&lt;/strong&gt;
+          &lt;small&gt;Only text. Usage ex.&lt;/small&gt;
+          &lt;code style&#x3D;&quot;text-transform:lowercase&quot;&gt;&amp;lt;button class&#x3D;&quot;btn btn-brand btn-facebook text&quot;&amp;gt;&amp;lt;span&amp;gt;Facebook&amp;lt;/span&amp;gt;&amp;lt;/button&amp;gt;&lt;/code&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;card-body&quot;&gt;
+          &lt;h6&gt;Size Small
+            &lt;small&gt;Add this class
+              &lt;code&gt;.btn-sm&lt;/code&gt;
+            &lt;/small&gt;
+          &lt;/h6&gt;
+          &lt;p&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-facebook&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Facebook&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-twitter&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Twitter&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-linkedin&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;LinkedIn&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-flickr&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Flickr&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-tumblr&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Tumblr&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-xing&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Xing&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-github&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Github&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-html5&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;HTML5&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-openid&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;OpenID&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-stack-overflow&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;StackOverflow&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-css3&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;CSS3&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-youtube&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;YouTube&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-dribbble&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Dribbble&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-google-plus&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Google+&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-instagram&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Instagram&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-pinterest&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Pinterest&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-vk&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;VK&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-yahoo&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Yahoo&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-behance&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Behance&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-dropbox&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Dropbox&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-reddit&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Reddit&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-spotify&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Spotify&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-vine&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Vine&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-foursquare&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Forsquare&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-sm btn-vimeo&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Vimeo&lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/p&gt;
+          &lt;h6&gt;Size Normal&lt;/h6&gt;
+          &lt;p&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-facebook&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Facebook&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-twitter&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Twitter&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-linkedin&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;LinkedIn&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-flickr&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Flickr&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-tumblr&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Tumblr&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-xing&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Xing&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-github&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Github&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-html5&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;HTML5&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-openid&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;OpenID&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-stack-overflow&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;StackOverflow&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-css3&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;CSS3&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-youtube&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;YouTube&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-dribbble&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Dribbble&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-google-plus&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Google+&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-instagram&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Instagram&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-pinterest&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Pinterest&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-vk&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;VK&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-yahoo&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Yahoo&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-behance&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Behance&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-dropbox&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Dropbox&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-reddit&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Reddit&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-spotify&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Spotify&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-vine&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Vine&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-foursquare&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Forsquare&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-vimeo&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Vimeo&lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/p&gt;
+          &lt;h6&gt;Size Large
+            &lt;small&gt;Add this class
+              &lt;code&gt;.btn-lg&lt;/code&gt;
+            &lt;/small&gt;
+          &lt;/h6&gt;
+          &lt;p&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-facebook&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Facebook&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-twitter&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Twitter&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-linkedin&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;LinkedIn&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-flickr&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Flickr&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-tumblr&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Tumblr&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-xing&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Xing&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-github&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Github&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-html5&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;HTML5&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-openid&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;OpenID&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-stack-overflow&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;StackOverflow&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-css3&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;CSS3&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-youtube&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;YouTube&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-dribbble&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Dribbble&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-google-plus&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Google+&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-instagram&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Instagram&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-pinterest&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Pinterest&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-vk&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;VK&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-yahoo&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Yahoo&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-behance&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Behance&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-dropbox&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Dropbox&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-reddit&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Reddit&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-spotify&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Spotify&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-vine&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Vine&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-foursquare&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Forsquare&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-brand btn-lg btn-vimeo&quot; style&#x3D;&quot;margin-bottom: 4px&quot;&gt;
+              &lt;span&gt;Vimeo&lt;/span&gt;
+            &lt;/button&gt;
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!--/.col--&gt;
+  &lt;/div&gt;
+  &lt;!--/.row--&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="animated fadeIn">  <div class="row">    <div class="col-12">      <div class="card">        <div class="card-header">          <strong>Brand Buttons</strong>          <small>Usage ex.</small>          <code style="text-transform:lowercase">&lt;button class="btn btn-brand btn-facebook"&gt;&lt;span&gt;Facebook&lt;/span&gt;&lt;/button&gt;</code>        </div>        <div class="card-body">          <h6>Size Small            <small>Add this class              <code>.btn-sm</code>            </small>          </h6>          <p>            <button type="button" class="btn btn-brand btn-sm btn-facebook" style="margin-bottom: 4px">              <i class="fa fa-facebook"></i>              <span>Facebook</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-twitter" style="margin-bottom: 4px">              <i class="fa fa-twitter"></i>              <span>Twitter</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-linkedin" style="margin-bottom: 4px">              <i class="fa fa-linkedin"></i>              <span>LinkedIn</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-flickr" style="margin-bottom: 4px">              <i class="fa fa-flickr"></i>              <span>Flickr</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-tumblr" style="margin-bottom: 4px">              <i class="fa fa-tumblr"></i>              <span>Tumblr</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-xing" style="margin-bottom: 4px">              <i class="fa fa-xing"></i>              <span>Xing</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-github" style="margin-bottom: 4px">              <i class="fa fa-github"></i>              <span>Github</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-html5" style="margin-bottom: 4px">              <i class="fa fa-html5"></i>              <span>HTML5</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-openid" style="margin-bottom: 4px">              <i class="fa fa-openid"></i>              <span>OpenID</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-stack-overflow" style="margin-bottom: 4px">              <i class="fa fa-stack-overflow"></i>              <span>StackOverflow</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-css3" style="margin-bottom: 4px">              <i class="fa fa-css3"></i>              <span>CSS3</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-youtube" style="margin-bottom: 4px">              <i class="fa fa-youtube"></i>              <span>YouTube</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-dribbble" style="margin-bottom: 4px">              <i class="fa fa-dribbble"></i>              <span>Dribbble</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-google-plus" style="margin-bottom: 4px">              <i class="fa fa-google-plus"></i>              <span>Google+</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-instagram" style="margin-bottom: 4px">              <i class="fa fa-instagram"></i>              <span>Instagram</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-pinterest" style="margin-bottom: 4px">              <i class="fa fa-pinterest"></i>              <span>Pinterest</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-vk" style="margin-bottom: 4px">              <i class="fa fa-vk"></i>              <span>VK</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-yahoo" style="margin-bottom: 4px">              <i class="fa fa-yahoo"></i>              <span>Yahoo</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-behance" style="margin-bottom: 4px">              <i class="fa fa-behance"></i>              <span>Behance</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-dropbox" style="margin-bottom: 4px">              <i class="fa fa-dropbox"></i>              <span>Dropbox</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-reddit" style="margin-bottom: 4px">              <i class="fa fa-reddit"></i>              <span>Reddit</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-spotify" style="margin-bottom: 4px">              <i class="fa fa-spotify"></i>              <span>Spotify</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-vine" style="margin-bottom: 4px">              <i class="fa fa-vine"></i>              <span>Vine</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-foursquare" style="margin-bottom: 4px">              <i class="fa fa-foursquare"></i>              <span>Forsquare</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-vimeo" style="margin-bottom: 4px">              <i class="fa fa-vimeo"></i>              <span>Vimeo</span>            </button>          </p>          <h6>Size Normal</h6>          <p>            <button type="button" class="btn btn-brand btn-facebook" style="margin-bottom: 4px">              <i class="fa fa-facebook"></i>              <span>Facebook</span>            </button>            <button type="button" class="btn btn-brand btn-twitter" style="margin-bottom: 4px">              <i class="fa fa-twitter"></i>              <span>Twitter</span>            </button>            <button type="button" class="btn btn-brand btn-linkedin" style="margin-bottom: 4px">              <i class="fa fa-linkedin"></i>              <span>LinkedIn</span>            </button>            <button type="button" class="btn btn-brand btn-flickr" style="margin-bottom: 4px">              <i class="fa fa-flickr"></i>              <span>Flickr</span>            </button>            <button type="button" class="btn btn-brand btn-tumblr" style="margin-bottom: 4px">              <i class="fa fa-tumblr"></i>              <span>Tumblr</span>            </button>            <button type="button" class="btn btn-brand btn-xing" style="margin-bottom: 4px">              <i class="fa fa-xing"></i>              <span>Xing</span>            </button>            <button type="button" class="btn btn-brand btn-github" style="margin-bottom: 4px">              <i class="fa fa-github"></i>              <span>Github</span>            </button>            <button type="button" class="btn btn-brand btn-html5" style="margin-bottom: 4px">              <i class="fa fa-html5"></i>              <span>HTML5</span>            </button>            <button type="button" class="btn btn-brand btn-openid" style="margin-bottom: 4px">              <i class="fa fa-openid"></i>              <span>OpenID</span>            </button>            <button type="button" class="btn btn-brand btn-stack-overflow" style="margin-bottom: 4px">              <i class="fa fa-stack-overflow"></i>              <span>StackOverflow</span>            </button>            <button type="button" class="btn btn-brand btn-css3" style="margin-bottom: 4px">              <i class="fa fa-css3"></i>              <span>CSS3</span>            </button>            <button type="button" class="btn btn-brand btn-youtube" style="margin-bottom: 4px">              <i class="fa fa-youtube"></i>              <span>YouTube</span>            </button>            <button type="button" class="btn btn-brand btn-dribbble" style="margin-bottom: 4px">              <i class="fa fa-dribbble"></i>              <span>Dribbble</span>            </button>            <button type="button" class="btn btn-brand btn-google-plus" style="margin-bottom: 4px">              <i class="fa fa-google-plus"></i>              <span>Google+</span>            </button>            <button type="button" class="btn btn-brand btn-instagram" style="margin-bottom: 4px">              <i class="fa fa-instagram"></i>              <span>Instagram</span>            </button>            <button type="button" class="btn btn-brand btn-pinterest" style="margin-bottom: 4px">              <i class="fa fa-pinterest"></i>              <span>Pinterest</span>            </button>            <button type="button" class="btn btn-brand btn-vk" style="margin-bottom: 4px">              <i class="fa fa-vk"></i>              <span>VK</span>            </button>            <button type="button" class="btn btn-brand btn-yahoo" style="margin-bottom: 4px">              <i class="fa fa-yahoo"></i>              <span>Yahoo</span>            </button>            <button type="button" class="btn btn-brand btn-behance" style="margin-bottom: 4px">              <i class="fa fa-behance"></i>              <span>Behance</span>            </button>            <button type="button" class="btn btn-brand btn-dropbox" style="margin-bottom: 4px">              <i class="fa fa-dropbox"></i>              <span>Dropbox</span>            </button>            <button type="button" class="btn btn-brand btn-reddit" style="margin-bottom: 4px">              <i class="fa fa-reddit"></i>              <span>Reddit</span>            </button>            <button type="button" class="btn btn-brand btn-spotify" style="margin-bottom: 4px">              <i class="fa fa-spotify"></i>              <span>Spotify</span>            </button>            <button type="button" class="btn btn-brand btn-vine" style="margin-bottom: 4px">              <i class="fa fa-vine"></i>              <span>Vine</span>            </button>            <button type="button" class="btn btn-brand btn-foursquare" style="margin-bottom: 4px">              <i class="fa fa-foursquare"></i>              <span>Forsquare</span>            </button>            <button type="button" class="btn btn-brand btn-vimeo" style="margin-bottom: 4px">              <i class="fa fa-vimeo"></i>              <span>Vimeo</span>            </button>          </p>          <h6>Size Large            <small>Add this class              <code>.btn-lg</code>            </small>          </h6>          <p>            <button type="button" class="btn btn-brand btn-lg btn-facebook" style="margin-bottom: 4px">              <i class="fa fa-facebook"></i>              <span>Facebook</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-twitter" style="margin-bottom: 4px">              <i class="fa fa-twitter"></i>              <span>Twitter</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-linkedin" style="margin-bottom: 4px">              <i class="fa fa-linkedin"></i>              <span>LinkedIn</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-flickr" style="margin-bottom: 4px">              <i class="fa fa-flickr"></i>              <span>Flickr</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-tumblr" style="margin-bottom: 4px">              <i class="fa fa-tumblr"></i>              <span>Tumblr</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-xing" style="margin-bottom: 4px">              <i class="fa fa-xing"></i>              <span>Xing</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-github" style="margin-bottom: 4px">              <i class="fa fa-github"></i>              <span>Github</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-html5" style="margin-bottom: 4px">              <i class="fa fa-html5"></i>              <span>HTML5</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-openid" style="margin-bottom: 4px">              <i class="fa fa-openid"></i>              <span>OpenID</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-stack-overflow" style="margin-bottom: 4px">              <i class="fa fa-stack-overflow"></i>              <span>StackOverflow</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-css3" style="margin-bottom: 4px">              <i class="fa fa-css3"></i>              <span>CSS3</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-youtube" style="margin-bottom: 4px">              <i class="fa fa-youtube"></i>              <span>YouTube</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-dribbble" style="margin-bottom: 4px">              <i class="fa fa-dribbble"></i>              <span>Dribbble</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-google-plus" style="margin-bottom: 4px">              <i class="fa fa-google-plus"></i>              <span>Google+</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-instagram" style="margin-bottom: 4px">              <i class="fa fa-instagram"></i>              <span>Instagram</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-pinterest" style="margin-bottom: 4px">              <i class="fa fa-pinterest"></i>              <span>Pinterest</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-vk" style="margin-bottom: 4px">              <i class="fa fa-vk"></i>              <span>VK</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-yahoo" style="margin-bottom: 4px">              <i class="fa fa-yahoo"></i>              <span>Yahoo</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-behance" style="margin-bottom: 4px">              <i class="fa fa-behance"></i>              <span>Behance</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-dropbox" style="margin-bottom: 4px">              <i class="fa fa-dropbox"></i>              <span>Dropbox</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-reddit" style="margin-bottom: 4px">              <i class="fa fa-reddit"></i>              <span>Reddit</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-spotify" style="margin-bottom: 4px">              <i class="fa fa-spotify"></i>              <span>Spotify</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-vine" style="margin-bottom: 4px">              <i class="fa fa-vine"></i>              <span>Vine</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-foursquare" style="margin-bottom: 4px">              <i class="fa fa-foursquare"></i>              <span>Forsquare</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-vimeo" style="margin-bottom: 4px">              <i class="fa fa-vimeo"></i>              <span>Vimeo</span>            </button>          </p>        </div>      </div>    </div>    <!--/.col-->    <div class="col-12">      <div class="card">        <div class="card-header">          <strong>Brand Buttons</strong>          <small>Only icons. Usage ex.</small>          <code style="text-transform:lowercase">&lt;button class="btn btn-brand btn-facebook"&gt;&lt;span&gt;Facebook&lt;/span&gt;&lt;/button&gt;</code>        </div>        <div class="card-body">          <h6>Size Small            <small>Add this class              <code>.btn-sm</code>            </small>          </h6>          <p>            <button type="button" class="btn btn-brand btn-sm btn-facebook" style="margin-bottom: 4px">              <i class="fa fa-facebook"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-twitter" style="margin-bottom: 4px">              <i class="fa fa-twitter"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-linkedin" style="margin-bottom: 4px">              <i class="fa fa-linkedin"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-flickr" style="margin-bottom: 4px">              <i class="fa fa-flickr"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-tumblr" style="margin-bottom: 4px">              <i class="fa fa-tumblr"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-xing" style="margin-bottom: 4px">              <i class="fa fa-xing"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-github" style="margin-bottom: 4px">              <i class="fa fa-github"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-html5" style="margin-bottom: 4px">              <i class="fa fa-html5"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-openid" style="margin-bottom: 4px">              <i class="fa fa-openid"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-stack-overflow" style="margin-bottom: 4px">              <i class="fa fa-stack-overflow"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-css3" style="margin-bottom: 4px">              <i class="fa fa-css3"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-youtube" style="margin-bottom: 4px">              <i class="fa fa-youtube"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-dribbble" style="margin-bottom: 4px">              <i class="fa fa-dribbble"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-google-plus" style="margin-bottom: 4px">              <i class="fa fa-google-plus"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-instagram" style="margin-bottom: 4px">              <i class="fa fa-instagram"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-pinterest" style="margin-bottom: 4px">              <i class="fa fa-pinterest"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-vk" style="margin-bottom: 4px">              <i class="fa fa-vk"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-yahoo" style="margin-bottom: 4px">              <i class="fa fa-yahoo"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-behance" style="margin-bottom: 4px">              <i class="fa fa-behance"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-dropbox" style="margin-bottom: 4px">              <i class="fa fa-dropbox"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-reddit" style="margin-bottom: 4px">              <i class="fa fa-reddit"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-spotify" style="margin-bottom: 4px">              <i class="fa fa-spotify"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-vine" style="margin-bottom: 4px">              <i class="fa fa-vine"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-foursquare" style="margin-bottom: 4px">              <i class="fa fa-foursquare"></i>            </button>            <button type="button" class="btn btn-brand btn-sm btn-vimeo" style="margin-bottom: 4px">              <i class="fa fa-vimeo"></i>            </button>          </p>          <h6>Size Normal</h6>          <p>            <button type="button" class="btn btn-brand btn-facebook" style="margin-bottom: 4px">              <i class="fa fa-facebook"></i>            </button>            <button type="button" class="btn btn-brand btn-twitter" style="margin-bottom: 4px">              <i class="fa fa-twitter"></i>            </button>            <button type="button" class="btn btn-brand btn-linkedin" style="margin-bottom: 4px">              <i class="fa fa-linkedin"></i>            </button>            <button type="button" class="btn btn-brand btn-flickr" style="margin-bottom: 4px">              <i class="fa fa-flickr"></i>            </button>            <button type="button" class="btn btn-brand btn-tumblr" style="margin-bottom: 4px">              <i class="fa fa-tumblr"></i>            </button>            <button type="button" class="btn btn-brand btn-xing" style="margin-bottom: 4px">              <i class="fa fa-xing"></i>            </button>            <button type="button" class="btn btn-brand btn-github" style="margin-bottom: 4px">              <i class="fa fa-github"></i>            </button>            <button type="button" class="btn btn-brand btn-html5" style="margin-bottom: 4px">              <i class="fa fa-html5"></i>            </button>            <button type="button" class="btn btn-brand btn-openid" style="margin-bottom: 4px">              <i class="fa fa-openid"></i>            </button>            <button type="button" class="btn btn-brand btn-stack-overflow" style="margin-bottom: 4px">              <i class="fa fa-stack-overflow"></i>            </button>            <button type="button" class="btn btn-brand btn-css3" style="margin-bottom: 4px">              <i class="fa fa-css3"></i>            </button>            <button type="button" class="btn btn-brand btn-youtube" style="margin-bottom: 4px">              <i class="fa fa-youtube"></i>            </button>            <button type="button" class="btn btn-brand btn-dribbble" style="margin-bottom: 4px">              <i class="fa fa-dribbble"></i>            </button>            <button type="button" class="btn btn-brand btn-google-plus" style="margin-bottom: 4px">              <i class="fa fa-google-plus"></i>            </button>            <button type="button" class="btn btn-brand btn-instagram" style="margin-bottom: 4px">              <i class="fa fa-instagram"></i>            </button>            <button type="button" class="btn btn-brand btn-pinterest" style="margin-bottom: 4px">              <i class="fa fa-pinterest"></i>            </button>            <button type="button" class="btn btn-brand btn-vk" style="margin-bottom: 4px">              <i class="fa fa-vk"></i>            </button>            <button type="button" class="btn btn-brand btn-yahoo" style="margin-bottom: 4px">              <i class="fa fa-yahoo"></i>            </button>            <button type="button" class="btn btn-brand btn-behance" style="margin-bottom: 4px">              <i class="fa fa-behance"></i>            </button>            <button type="button" class="btn btn-brand btn-dropbox" style="margin-bottom: 4px">              <i class="fa fa-dropbox"></i>            </button>            <button type="button" class="btn btn-brand btn-reddit" style="margin-bottom: 4px">              <i class="fa fa-reddit"></i>            </button>            <button type="button" class="btn btn-brand btn-spotify" style="margin-bottom: 4px">              <i class="fa fa-spotify"></i>            </button>            <button type="button" class="btn btn-brand btn-vine" style="margin-bottom: 4px">              <i class="fa fa-vine"></i>            </button>            <button type="button" class="btn btn-brand btn-foursquare" style="margin-bottom: 4px">              <i class="fa fa-foursquare"></i>            </button>            <button type="button" class="btn btn-brand btn-vimeo" style="margin-bottom: 4px">              <i class="fa fa-vimeo"></i>            </button>          </p>          <h6>Size Large            <small>Add this class              <code>.btn-lg</code>            </small>          </h6>          <p>            <button type="button" class="btn btn-brand btn-lg btn-facebook" style="margin-bottom: 4px">              <i class="fa fa-facebook"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-twitter" style="margin-bottom: 4px">              <i class="fa fa-twitter"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-linkedin" style="margin-bottom: 4px">              <i class="fa fa-linkedin"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-flickr" style="margin-bottom: 4px">              <i class="fa fa-flickr"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-tumblr" style="margin-bottom: 4px">              <i class="fa fa-tumblr"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-xing" style="margin-bottom: 4px">              <i class="fa fa-xing"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-github" style="margin-bottom: 4px">              <i class="fa fa-github"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-html5" style="margin-bottom: 4px">              <i class="fa fa-html5"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-openid" style="margin-bottom: 4px">              <i class="fa fa-openid"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-stack-overflow" style="margin-bottom: 4px">              <i class="fa fa-stack-overflow"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-css3" style="margin-bottom: 4px">              <i class="fa fa-css3"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-youtube" style="margin-bottom: 4px">              <i class="fa fa-youtube"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-dribbble" style="margin-bottom: 4px">              <i class="fa fa-dribbble"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-google-plus" style="margin-bottom: 4px">              <i class="fa fa-google-plus"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-instagram" style="margin-bottom: 4px">              <i class="fa fa-instagram"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-pinterest" style="margin-bottom: 4px">              <i class="fa fa-pinterest"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-vk" style="margin-bottom: 4px">              <i class="fa fa-vk"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-yahoo" style="margin-bottom: 4px">              <i class="fa fa-yahoo"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-behance" style="margin-bottom: 4px">              <i class="fa fa-behance"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-dropbox" style="margin-bottom: 4px">              <i class="fa fa-dropbox"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-reddit" style="margin-bottom: 4px">              <i class="fa fa-reddit"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-spotify" style="margin-bottom: 4px">              <i class="fa fa-spotify"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-vine" style="margin-bottom: 4px">              <i class="fa fa-vine"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-foursquare" style="margin-bottom: 4px">              <i class="fa fa-foursquare"></i>            </button>            <button type="button" class="btn btn-brand btn-lg btn-vimeo" style="margin-bottom: 4px">              <i class="fa fa-vimeo"></i>            </button>          </p>        </div>      </div>    </div>    <!--/.col-->    <div class="col-12">      <div class="card">        <div class="card-header">          <strong>Brand Buttons</strong>          <small>Only text. Usage ex.</small>          <code style="text-transform:lowercase">&lt;button class="btn btn-brand btn-facebook text"&gt;&lt;span&gt;Facebook&lt;/span&gt;&lt;/button&gt;</code>        </div>        <div class="card-body">          <h6>Size Small            <small>Add this class              <code>.btn-sm</code>            </small>          </h6>          <p>            <button type="button" class="btn btn-brand btn-sm btn-facebook" style="margin-bottom: 4px">              <span>Facebook</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-twitter" style="margin-bottom: 4px">              <span>Twitter</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-linkedin" style="margin-bottom: 4px">              <span>LinkedIn</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-flickr" style="margin-bottom: 4px">              <span>Flickr</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-tumblr" style="margin-bottom: 4px">              <span>Tumblr</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-xing" style="margin-bottom: 4px">              <span>Xing</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-github" style="margin-bottom: 4px">              <span>Github</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-html5" style="margin-bottom: 4px">              <span>HTML5</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-openid" style="margin-bottom: 4px">              <span>OpenID</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-stack-overflow" style="margin-bottom: 4px">              <span>StackOverflow</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-css3" style="margin-bottom: 4px">              <span>CSS3</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-youtube" style="margin-bottom: 4px">              <span>YouTube</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-dribbble" style="margin-bottom: 4px">              <span>Dribbble</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-google-plus" style="margin-bottom: 4px">              <span>Google+</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-instagram" style="margin-bottom: 4px">              <span>Instagram</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-pinterest" style="margin-bottom: 4px">              <span>Pinterest</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-vk" style="margin-bottom: 4px">              <span>VK</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-yahoo" style="margin-bottom: 4px">              <span>Yahoo</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-behance" style="margin-bottom: 4px">              <span>Behance</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-dropbox" style="margin-bottom: 4px">              <span>Dropbox</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-reddit" style="margin-bottom: 4px">              <span>Reddit</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-spotify" style="margin-bottom: 4px">              <span>Spotify</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-vine" style="margin-bottom: 4px">              <span>Vine</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-foursquare" style="margin-bottom: 4px">              <span>Forsquare</span>            </button>            <button type="button" class="btn btn-brand btn-sm btn-vimeo" style="margin-bottom: 4px">              <span>Vimeo</span>            </button>          </p>          <h6>Size Normal</h6>          <p>            <button type="button" class="btn btn-brand btn-facebook" style="margin-bottom: 4px">              <span>Facebook</span>            </button>            <button type="button" class="btn btn-brand btn-twitter" style="margin-bottom: 4px">              <span>Twitter</span>            </button>            <button type="button" class="btn btn-brand btn-linkedin" style="margin-bottom: 4px">              <span>LinkedIn</span>            </button>            <button type="button" class="btn btn-brand btn-flickr" style="margin-bottom: 4px">              <span>Flickr</span>            </button>            <button type="button" class="btn btn-brand btn-tumblr" style="margin-bottom: 4px">              <span>Tumblr</span>            </button>            <button type="button" class="btn btn-brand btn-xing" style="margin-bottom: 4px">              <span>Xing</span>            </button>            <button type="button" class="btn btn-brand btn-github" style="margin-bottom: 4px">              <span>Github</span>            </button>            <button type="button" class="btn btn-brand btn-html5" style="margin-bottom: 4px">              <span>HTML5</span>            </button>            <button type="button" class="btn btn-brand btn-openid" style="margin-bottom: 4px">              <span>OpenID</span>            </button>            <button type="button" class="btn btn-brand btn-stack-overflow" style="margin-bottom: 4px">              <span>StackOverflow</span>            </button>            <button type="button" class="btn btn-brand btn-css3" style="margin-bottom: 4px">              <span>CSS3</span>            </button>            <button type="button" class="btn btn-brand btn-youtube" style="margin-bottom: 4px">              <span>YouTube</span>            </button>            <button type="button" class="btn btn-brand btn-dribbble" style="margin-bottom: 4px">              <span>Dribbble</span>            </button>            <button type="button" class="btn btn-brand btn-google-plus" style="margin-bottom: 4px">              <span>Google+</span>            </button>            <button type="button" class="btn btn-brand btn-instagram" style="margin-bottom: 4px">              <span>Instagram</span>            </button>            <button type="button" class="btn btn-brand btn-pinterest" style="margin-bottom: 4px">              <span>Pinterest</span>            </button>            <button type="button" class="btn btn-brand btn-vk" style="margin-bottom: 4px">              <span>VK</span>            </button>            <button type="button" class="btn btn-brand btn-yahoo" style="margin-bottom: 4px">              <span>Yahoo</span>            </button>            <button type="button" class="btn btn-brand btn-behance" style="margin-bottom: 4px">              <span>Behance</span>            </button>            <button type="button" class="btn btn-brand btn-dropbox" style="margin-bottom: 4px">              <span>Dropbox</span>            </button>            <button type="button" class="btn btn-brand btn-reddit" style="margin-bottom: 4px">              <span>Reddit</span>            </button>            <button type="button" class="btn btn-brand btn-spotify" style="margin-bottom: 4px">              <span>Spotify</span>            </button>            <button type="button" class="btn btn-brand btn-vine" style="margin-bottom: 4px">              <span>Vine</span>            </button>            <button type="button" class="btn btn-brand btn-foursquare" style="margin-bottom: 4px">              <span>Forsquare</span>            </button>            <button type="button" class="btn btn-brand btn-vimeo" style="margin-bottom: 4px">              <span>Vimeo</span>            </button>          </p>          <h6>Size Large            <small>Add this class              <code>.btn-lg</code>            </small>          </h6>          <p>            <button type="button" class="btn btn-brand btn-lg btn-facebook" style="margin-bottom: 4px">              <span>Facebook</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-twitter" style="margin-bottom: 4px">              <span>Twitter</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-linkedin" style="margin-bottom: 4px">              <span>LinkedIn</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-flickr" style="margin-bottom: 4px">              <span>Flickr</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-tumblr" style="margin-bottom: 4px">              <span>Tumblr</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-xing" style="margin-bottom: 4px">              <span>Xing</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-github" style="margin-bottom: 4px">              <span>Github</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-html5" style="margin-bottom: 4px">              <span>HTML5</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-openid" style="margin-bottom: 4px">              <span>OpenID</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-stack-overflow" style="margin-bottom: 4px">              <span>StackOverflow</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-css3" style="margin-bottom: 4px">              <span>CSS3</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-youtube" style="margin-bottom: 4px">              <span>YouTube</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-dribbble" style="margin-bottom: 4px">              <span>Dribbble</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-google-plus" style="margin-bottom: 4px">              <span>Google+</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-instagram" style="margin-bottom: 4px">              <span>Instagram</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-pinterest" style="margin-bottom: 4px">              <span>Pinterest</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-vk" style="margin-bottom: 4px">              <span>VK</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-yahoo" style="margin-bottom: 4px">              <span>Yahoo</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-behance" style="margin-bottom: 4px">              <span>Behance</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-dropbox" style="margin-bottom: 4px">              <span>Dropbox</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-reddit" style="margin-bottom: 4px">              <span>Reddit</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-spotify" style="margin-bottom: 4px">              <span>Spotify</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-vine" style="margin-bottom: 4px">              <span>Vine</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-foursquare" style="margin-bottom: 4px">              <span>Forsquare</span>            </button>            <button type="button" class="btn btn-brand btn-lg btn-vimeo" style="margin-bottom: 4px">              <span>Vimeo</span>            </button>          </p>        </div>      </div>    </div>    <!--/.col-->  </div>  <!--/.row--></div></div>'
+    var COMPONENTS = [{'name': 'AlertsComponent', 'selector': ''},{'name': 'AppComponent', 'selector': 'body'},{'name': 'BadgesComponent', 'selector': ''},{'name': 'BrandButtonsComponent', 'selector': ''},{'name': 'ButtonsComponent', 'selector': ''},{'name': 'CardsComponent', 'selector': ''},{'name': 'CarouselsComponent', 'selector': ''},{'name': 'ChartJSComponent', 'selector': ''},{'name': 'CollapsesComponent', 'selector': ''},{'name': 'ColorsComponent', 'selector': ''},{'name': 'CoreUIIconsComponent', 'selector': ''},{'name': 'DashboardComponent', 'selector': ''},{'name': 'DefaultLayoutComponent', 'selector': 'app-dashboard'},{'name': 'DropdownsComponent', 'selector': ''},{'name': 'ExperienciaLaboralComponent', 'selector': 'app-experiencia-laboral'},{'name': 'FlagsComponent', 'selector': ''},{'name': 'FontAwesomeComponent', 'selector': ''},{'name': 'FormacionAcademicaComponent', 'selector': 'app-formacion-academica'},{'name': 'FormsComponent', 'selector': ''},{'name': 'ListadoAspirantesComponent', 'selector': 'app-listado-aspirantes-cupo'},{'name': 'ListadoCuposComponent', 'selector': 'app-listado-cupos'},{'name': 'LoginComponent', 'selector': 'app-dashboard'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ModalsComponent', 'selector': ''},{'name': 'NucleoFamiliarComponent', 'selector': 'app-nucleo-familiar'},{'name': 'P404Component', 'selector': ''},{'name': 'P500Component', 'selector': ''},{'name': 'PaginationsComponent', 'selector': ''},{'name': 'PersonaComponent', 'selector': 'app-persona'},{'name': 'PersonalComponent', 'selector': 'app-personal'},{'name': 'PopoversComponent', 'selector': ''},{'name': 'ProcesoArchivoComponent', 'selector': 'app-proceso-archivo'},{'name': 'ProgressComponent', 'selector': ''},{'name': 'PruebasComponent', 'selector': 'app-pruebas'},{'name': 'RegisterComponent', 'selector': 'app-dashboard'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'SimpleLineIconsComponent', 'selector': ''},{'name': 'SolicitudComponent', 'selector': 'app-solicitud'},{'name': 'SwitchesComponent', 'selector': ''},{'name': 'TablesComponent', 'selector': ''},{'name': 'TabsComponent', 'selector': ''},{'name': 'TooltipsComponent', 'selector': ''},{'name': 'TypographyComponent', 'selector': ''},{'name': 'WidgetsComponent', 'selector': ''}];
+    var DIRECTIVES = [{'name': 'NumberOnlyDirective', 'selector': '[myNumberOnly]'},{'name': 'UppercaseDirective', 'selector': '[ngModel][uppercase]'}];
+    var ACTUAL_COMPONENT = {'name': 'BrandButtonsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'BrandButtonsComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

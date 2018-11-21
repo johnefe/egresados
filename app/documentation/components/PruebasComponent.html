@@ -1,0 +1,1411 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>@coreui/coreui-free-angular-admin-template documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">@coreui/coreui-free-angular-admin-template documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>PruebasComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/views2/pruebas/pruebas/pruebas.component.ts</code>
+</p>
+
+
+
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-pruebas</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>pruebas.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./pruebas.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#esCalificar">esCalificar</a>
+                            </li>
+                            <li>
+                                <a href="#idPrueba">idPrueba</a>
+                            </li>
+                            <li>
+                                <a href="#lstAreas">lstAreas</a>
+                            </li>
+                            <li>
+                                <a href="#lstAreasCalificados">lstAreasCalificados</a>
+                            </li>
+                            <li>
+                                <a href="#lstAspirantes">lstAspirantes</a>
+                            </li>
+                            <li>
+                                <a href="#lstPruebas">lstPruebas</a>
+                            </li>
+                            <li>
+                                <a href="#pruebaEscojida">pruebaEscojida</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#serviceMensaje">serviceMensaje</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#calificar">calificar</a>
+                            </li>
+                            <li>
+                                <a href="#cancelar">cancelar</a>
+                            </li>
+                            <li>
+                                <a href="#guardar">guardar</a>
+                            </li>
+                            <li>
+                                <a href="#limpiarVariables">limpiarVariables</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#obtenerPruebas">obtenerPruebas</a>
+                            </li>
+                            <li>
+                                <a href="#regresar">regresar</a>
+                            </li>
+                            <li>
+                                <a href="#seleccionarPrueba">seleccionarPrueba</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(serviceMensaje: <a href="../injectables/MensajeService.html">MensajeService</a>, servicePruebaAdmision: <a href="../injectables/PruebaAdmisionService.html">PruebaAdmisionService</a>, serviceHelpers: <a href="../injectables/HelpersService.html">HelpersService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/views2/pruebas/pruebas/pruebas.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>serviceMensaje</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/MensajeService.html" target="_self" >MensajeService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>servicePruebaAdmision</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/PruebaAdmisionService.html" target="_self" >PruebaAdmisionService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>serviceHelpers</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/HelpersService.html" target="_self" >HelpersService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="calificar"></a>
+                        <span class="name">
+                            <b>
+                            calificar
+                            </b>
+                            <a href="#calificar"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>calificar()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="161" class="link-to-prism">src/app/views2/pruebas/pruebas/pruebas.component.ts:161</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cancelar"></a>
+                        <span class="name">
+                            <b>
+                            cancelar
+                            </b>
+                            <a href="#cancelar"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>cancelar()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="204" class="link-to-prism">src/app/views2/pruebas/pruebas/pruebas.component.ts:204</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="guardar"></a>
+                        <span class="name">
+                            <b>
+                            guardar
+                            </b>
+                            <a href="#guardar"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>guardar(esValido: )</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="213" class="link-to-prism">src/app/views2/pruebas/pruebas/pruebas.component.ts:213</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>esValido</td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="limpiarVariables"></a>
+                        <span class="name">
+                            <b>
+                            limpiarVariables
+                            </b>
+                            <a href="#limpiarVariables"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>limpiarVariables()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/views2/pruebas/pruebas/pruebas.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/views2/pruebas/pruebas/pruebas.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="obtenerPruebas"></a>
+                        <span class="name">
+                            <b>
+                            obtenerPruebas
+                            </b>
+                            <a href="#obtenerPruebas"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>obtenerPruebas()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/views2/pruebas/pruebas/pruebas.component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="regresar"></a>
+                        <span class="name">
+                            <b>
+                            regresar
+                            </b>
+                            <a href="#regresar"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>regresar()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="255" class="link-to-prism">src/app/views2/pruebas/pruebas/pruebas.component.ts:255</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="seleccionarPrueba"></a>
+                        <span class="name">
+                            <b>
+                            seleccionarPrueba
+                            </b>
+                            <a href="#seleccionarPrueba"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>seleccionarPrueba()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/app/views2/pruebas/pruebas/pruebas.component.ts:89</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="esCalificar"></a>
+                        <span class="name">
+                            <b>
+                            esCalificar
+                            </b>
+                            <a href="#esCalificar"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>esCalificar:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/views2/pruebas/pruebas/pruebas.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="idPrueba"></a>
+                        <span class="name">
+                            <b>
+                            idPrueba
+                            </b>
+                            <a href="#idPrueba"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>idPrueba:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank" >Number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank" >Number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/views2/pruebas/pruebas/pruebas.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lstAreas"></a>
+                        <span class="name">
+                            <b>
+                            lstAreas
+                            </b>
+                            <a href="#lstAreas"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>lstAreas:     <code>Array&lt;any&gt;</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Array&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/views2/pruebas/pruebas/pruebas.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lstAreasCalificados"></a>
+                        <span class="name">
+                            <b>
+                            lstAreasCalificados
+                            </b>
+                            <a href="#lstAreasCalificados"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>lstAreasCalificados:     <code>Array&lt;any&gt;</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Array&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/views2/pruebas/pruebas/pruebas.component.ts:21</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lstAspirantes"></a>
+                        <span class="name">
+                            <b>
+                            lstAspirantes
+                            </b>
+                            <a href="#lstAspirantes"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>lstAspirantes:     <code>Array&lt;any&gt;</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Array&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/views2/pruebas/pruebas/pruebas.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="lstPruebas"></a>
+                        <span class="name">
+                            <b>
+                            lstPruebas
+                            </b>
+                            <a href="#lstPruebas"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>lstPruebas:     <code>Array&lt;any&gt;</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Array&lt;any&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/views2/pruebas/pruebas/pruebas.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pruebaEscojida"></a>
+                        <span class="name">
+                            <b>
+                            pruebaEscojida
+                            </b>
+                            <a href="#pruebaEscojida"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>pruebaEscojida:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/views2/pruebas/pruebas/pruebas.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="serviceMensaje"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            serviceMensaje
+                            </b>
+                            <a href="#serviceMensaje"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>serviceMensaje:     <code><a href="../injectables/MensajeService.html" target="_self" >MensajeService</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../injectables/MensajeService.html" target="_self" >MensajeService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/views2/pruebas/pruebas/pruebas.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, ViewChild, OnInit, TemplateRef } from &#x27;@angular/core&#x27;;
+import { MensajeService } from &#x27;../../../app-core/services/app-admin/mensaje/mensaje.service&#x27;;
+import { PruebaAdmisionService } from &#x27;../../../app-core/services/prueba-admision/prueba-admision.service&#x27;;
+import { HelpersService } from &#x27;../../../app-core/services/app-admin/helpers/helpers.service&#x27;;
+
+
+
+@Component({
+  selector: &#x27;app-pruebas&#x27;,
+  templateUrl: &#x27;./pruebas.component.html&#x27;,
+  styleUrls: [&#x27;./pruebas.component.scss&#x27;]
+})
+export class PruebasComponent {
+
+  lstPruebas: Array&lt;any&gt;;
+  lstAspirantes: Array&lt;any&gt;;
+  pruebaEscojida: any;
+  esCalificar: boolean;
+  lstAreas: Array&lt;any&gt;;
+  lstAreasCalificados: Array&lt;any&gt;;
+  idPrueba: Number;
+
+
+
+  constructor(
+    public serviceMensaje: MensajeService,
+    private servicePruebaAdmision: PruebaAdmisionService,
+    private serviceHelpers: HelpersService,
+  ) {
+    this.lstPruebas &#x3D; [];
+    this.lstAspirantes &#x3D; [];
+    this.esCalificar &#x3D; false;
+    this.lstAreas &#x3D; [];
+    this.lstAreasCalificados&#x3D;[];
+    this.idPrueba &#x3D; 0;
+    this.pruebaEscojida &#x3D; null;
+
+  }
+
+
+  ngOnInit() {
+    this.obtenerPruebas();
+  }
+
+
+  limpiarVariables() {
+    this.lstPruebas &#x3D; [];
+    this.lstAspirantes &#x3D; [];
+    this.esCalificar &#x3D; false;
+    this.lstAreas &#x3D; [];
+    this.idPrueba &#x3D; 0;
+    this.pruebaEscojida &#x3D; null;
+    this.lstAreasCalificados&#x3D;[];
+  }
+
+
+  obtenerPruebas() {
+    this.serviceMensaje.procesando();
+    this.limpiarVariables();
+
+    this.servicePruebaAdmision.obtener_listado()
+      .subscribe(
+        (pruebas: any) &#x3D;&gt; {
+          try {
+            if (pruebas.length &gt; 0) {
+              console.log(&#x27;toca escojer&#x27;);
+              this.lstPruebas &#x3D; pruebas;
+
+            } else {
+              throw new Error(&#x27;Ud no tiene asignado una prueba de admision&#x27;);
+            }
+            this.serviceMensaje.cerrarMensaje();
+          } catch (error) {
+            if (error.message) {
+              this.serviceMensaje.enviarMensaje(&#x27;Error&#x27;, error.message, &#x27;e&#x27;);
+            } else {
+              this.serviceMensaje.enviarMensaje(&#x27;Error&#x27;, &#x27;Error al obtener el listado de aspirantes, intentelo nuevamente por favor&#x27;, &#x27;e&#x27;);
+            }
+          }
+
+        },
+        error &#x3D;&gt; {
+          this.serviceMensaje.mensajeErrorServidor(error);
+        }
+      );
+  }
+
+  seleccionarPrueba() {
+    this.pruebaEscojida &#x3D; this.serviceHelpers.buscarObjetoByKey(this.lstPruebas, &#x27;id_prueba&#x27;, this.idPrueba);
+    if (this.pruebaEscojida) {
+        console.log(this.pruebaEscojida);
+        this.pruebaEscojida.fecha_formateada &#x3D; this.serviceHelpers.formatearFecha(this.pruebaEscojida.fecha_prueba, &#x27;S&#x27;);
+        if (this.pruebaEscojida.estado_prueba &#x3D;&#x3D;&#x3D; &#x27;C&#x27;) {
+          this.pruebaEscojida.fecha_formateada_calif &#x3D; this.serviceHelpers
+          .formatearFecha(this.pruebaEscojida.fecha_registro_calificacion, &#x27;S&#x27;);
+          this.serviceMensaje.procesando();
+
+
+          var listadoAspirantes&#x3D; new Array();
+          this.pruebaEscojida.listado.forEach(item&#x3D;&gt;{
+              listadoAspirantes.push(item.id_aspirante_oferta_programa);
+          });
+
+
+          this.servicePruebaAdmision.obtenerListaCalificados(listadoAspirantes)
+            .subscribe(
+              (listado: any)&#x3D;&gt;{
+                try{
+
+                  console.log(listado);
+
+                  this.pruebaEscojida.listado.forEach(item &#x3D;&gt; {
+                    listado.forEach(iobtenido &#x3D;&gt; {
+                      if(item.id_aspirante_oferta_programa&#x3D;&#x3D; iobtenido.id_aspirante_oferta_programa){
+                        item.lstAreasCalificados&#x3D; iobtenido.lstAreas;
+                      }
+                    });
+                  });
+
+                  this.servicePruebaAdmision.obtenerAreas(this.pruebaEscojida)
+                    .subscribe(
+                      (areas:any)&#x3D;&gt;{
+
+                        try{
+
+
+                          this.lstAreasCalificados &#x3D; areas;
+                          this.serviceMensaje.cerrarMensaje();
+
+                        }
+                        catch (error){
+                          if (error.message) {
+                            this.serviceMensaje.enviarMensaje(&#x27;Error&#x27;, error.message, &#x27;e&#x27;);
+                          } else {
+                            this.serviceMensaje.enviarMensaje(&#x27;Error&#x27;, &#x27;Error al obtener el listado de aspirantes, intentelo nuevamente por favor&#x27;, &#x27;e&#x27;);
+                          }
+                        }
+                      },
+                      error&#x3D;&gt;{
+                        this.serviceMensaje.mensajeErrorServidor(error);
+                      }
+                    )
+                 
+                }
+                catch(error){
+                  this.serviceMensaje.enviarMensaje(&#x27;Error&#x27;,
+                  &#x27;Error al obtener el listado de calificaciones&#x27;, &#x27;e&#x27;);
+                }
+              },
+              error &#x3D;&gt;{
+                this.serviceMensaje.mensajeErrorServidor(error);
+              }
+            )
+        }
+    } else {
+      this.serviceMensaje.enviarMensaje(&#x27;Error&#x27;, &#x27;Seleccione una prueba valida&#x27;, &#x27;e&#x27;);
+    }
+  }
+
+  calificar() {
+    this.serviceMensaje.procesando();
+    if (this.pruebaEscojida) {
+      this.servicePruebaAdmision.obtenerAreas(this.pruebaEscojida)
+        .subscribe(
+          (areas: any) &#x3D;&gt; {
+            try {
+              this.esCalificar &#x3D; true;
+              this.lstAreas &#x3D; areas;
+
+              const listacalificaciones &#x3D; new Array();
+
+              this.lstAreas.forEach(item &#x3D;&gt; {
+                const auxiliar &#x3D; {
+                  id_detalle_prueba_admision: item.id_detalle_prueba_admision,
+                  porcentaje: item.porcentaje,
+                  valor: &#x27;&#x27;
+                };
+                listacalificaciones.push(auxiliar);
+              });
+
+              this.pruebaEscojida.listado.forEach(element &#x3D;&gt; {
+                element.lstAreas &#x3D; JSON.parse(JSON.stringify(listacalificaciones));
+              });
+
+
+
+              this.serviceMensaje.cerrarMensaje();
+            } catch (error) {
+              this.serviceMensaje.enviarMensaje(&#x27;Error&#x27;,
+              &#x27;Error al obtener el listado de areas de la prueba, intentelo nuevamente por favor&#x27;, &#x27;e&#x27;);
+            }
+          },
+          error &#x3D;&gt; {
+            this.serviceMensaje.mensajeErrorServidor(error);
+          });
+
+    } else {
+      this.serviceMensaje.enviarMensaje(&#x27;Error&#x27;, &#x27;Error al consultar la información, por favor actualice la pagina&#x27;, &#x27;e&#x27;);
+    }
+
+  }
+
+  cancelar() {
+    this.esCalificar &#x3D; false;
+    this.lstAreas &#x3D; [];
+    this.lstAreasCalificados&#x3D;[];
+    this.pruebaEscojida.listado.forEach(element &#x3D;&gt; {
+      element.lstAreas &#x3D; [];
+    });
+  }
+
+  guardar(esValido) {
+    if (esValido) {
+      this.serviceMensaje.procesando();
+      if (this.esCalificar) {
+        if (this.pruebaEscojida.listado) {
+
+          this.servicePruebaAdmision.guardarCalificaciones(this.pruebaEscojida)
+          .subscribe(
+            (resultado: any ) &#x3D;&gt; {
+              try {
+                  this.serviceMensaje.cerrarMensaje();
+                  this.serviceMensaje.enviarMensajeFuncion(&quot;Registros actualizados&quot;,&quot;Los registros de las pruebas de admisión fueron actualizados en el sistema&quot;,&quot;s&quot;,function(){
+                    window.location.reload();
+                  });
+                  
+              } catch (error) {
+                if (error.message) {
+                  this.serviceMensaje.enviarMensaje(&#x27;Error&#x27;, error.message, &#x27;e&#x27;);
+                } else {
+                  this.serviceMensaje.enviarMensaje(&#x27;Error&#x27;,
+                  &#x27;Error al obtener el listado de areas de la prueba, intentelo nuevamente por favor&#x27;, &#x27;e&#x27;);
+                }
+              }
+
+            },
+            error &#x3D;&gt; {
+              this.serviceMensaje.mensajeErrorServidor(error);
+            }
+          );
+
+        } else {
+          this.serviceMensaje.enviarMensaje(&#x27;Error&#x27;, &#x27;Error al actualizar los registros&#x27;, &#x27;e&#x27;);
+        }
+      } else {
+        this.serviceMensaje.enviarMensaje(&#x27;Error&#x27;, &#x27;Error al actualizar los registros&#x27;, &#x27;e&#x27;);
+      }
+    } else {
+      this.serviceMensaje.enviarMensaje(&#x27;Error&#x27;, &#x27;No ha diligenciado todas las calificaciones, revise los datos&#x27;, &#x27;w&#x27;);
+    }
+
+  }
+
+  regresar() {
+    this.lstAspirantes &#x3D; [];
+    this.esCalificar &#x3D; false;
+    this.lstAreas &#x3D; [];
+    this.pruebaEscojida &#x3D; null;
+    this.idPrueba &#x3D; 0;
+    this.lstAreasCalificados&#x3D;[];
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;animated fadeIn&quot;&gt;
+
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+        &lt;div class&#x3D;&quot;col-sm-12&quot;&gt;
+            &lt;h4&gt;Aplicacion de pruebas de admision&lt;/h4&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+
+    &lt;div *ngIf&#x3D;&quot;!pruebaEscojida&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-accent-success&quot;&gt;
+            &lt;div class&#x3D;&quot;card-header&quot;&gt;
+                &lt;strong&gt;Selección de prueba&lt;/strong&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                &lt;p&gt;Por favor seleccione el programa del cual desea revisar la prueba de admisión:&lt;/p&gt;
+                &lt;select class&#x3D;&quot;form-control&quot; [(ngModel)]&#x3D;&quot;idPrueba&quot;&gt;
+                  &lt;option value&#x3D;&quot;0&quot;&gt;Seleccione...&lt;/option&gt;
+                  &lt;option *ngFor&#x3D;&quot;let iprueba of lstPruebas&quot; [ngValue]&#x3D;&quot;iprueba.id_prueba&quot;&gt;
+                      {{iprueba.nombre_unidad}}  
+                  &lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success&quot; (click)&#x3D;&quot;seleccionarPrueba()&quot;&gt;
+                    &lt;i class&#x3D;&quot;fa fa-play&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; Iniciar
+                &lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div *ngIf&#x3D;&quot;pruebaEscojida&quot;&gt;
+        &lt;div class&#x3D;&quot;card card-accent-success&quot;&gt;
+            &lt;div class&#x3D;&quot;card-header&quot;&gt;
+                &lt;strong&gt;Detalles de la prueba&lt;/strong&gt;
+                &lt;span *ngIf&#x3D;&quot;pruebaEscojida.estado_prueba&#x3D;&#x3D;&#x27;P&#x27;&quot; class&#x3D;&quot;badge badge-warning text-white float-right&quot;&gt;Pendiente&lt;/span&gt;
+                &lt;span *ngIf&#x3D;&quot;pruebaEscojida.estado_prueba&#x3D;&#x3D;&#x27;C&#x27;&quot; class&#x3D;&quot;badge badge-success float-right&quot;&gt;Calificada&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                &lt;div class&#x3D;&quot;row&quot;&gt;
+                    &lt;div class&#x3D;&quot; col-xl-4 col-4 col-sm-4 col-md-4&quot;&gt;
+
+                        &lt;label&gt;&lt;strong&gt; Programa:&lt;/strong&gt;&lt;/label&gt;
+                        &lt;p&gt;{{pruebaEscojida.codigo_unidad+&quot;-&quot;+pruebaEscojida.nombre_unidad}}&lt;/p&gt;
+
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;col-xl-4 col-4 col-sm-4 col-md-4&quot;&gt;
+
+                        &lt;label&gt;&lt;strong&gt;Lugar:&lt;/strong&gt;&lt;/label&gt;
+                        &lt;p&gt;{{pruebaEscojida.lugar_prueba}}&lt;/p&gt;
+
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;col-xl-4 col-4 col-sm-4 col-md-4&quot;&gt;
+
+                        &lt;label&gt;&lt;strong&gt;Fecha presentación:&lt;/strong&gt;&lt;/label&gt;
+                        &lt;p&gt;{{pruebaEscojida.fecha_formateada}}&lt;/p&gt;
+
+                    &lt;/div&gt;
+                    &lt;!-- es para marcar la fecha en la que fue calificada la prueba--&gt;
+                    &lt;div *ngIf&#x3D;&quot;pruebaEscojida.estado_prueba&#x3D;&#x3D;&#x27;C&#x27;&quot; class&#x3D;&quot;col-xl-4 col-4 col-sm-4 col-md-4&quot;&gt;
+
+                        &lt;label&gt;&lt;strong&gt;Fecha Calificacion:&lt;/strong&gt;&lt;/label&gt;
+                        &lt;p&gt;{{pruebaEscojida.fecha_formateada_calif}}&lt;/p&gt;
+
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;row&quot;&gt;
+            &lt;div class&#x3D;&quot;col-sm-2&quot;&gt;
+                &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                    &lt;button class&#x3D;&quot;btn btn-primary &quot; *ngIf&#x3D;&quot;pruebaEscojida.estado_prueba&#x3D;&#x3D;&#x27;P&#x27;&quot;&gt;
+                            &lt;i class&#x3D;&quot;fa fa-list&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; Imprimir Listado
+                    &lt;/button&gt;
+                    &lt;button class&#x3D;&quot;btn btn-success &quot; *ngIf&#x3D;&quot;pruebaEscojida.estado_prueba&#x3D;&#x3D;&#x27;C&#x27;&quot;&gt;
+                        &lt;i class&#x3D;&quot;fa fa-list&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; Imprimir Resultados
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;form #frm&#x3D;&quot;ngForm&quot; (ngSubmit)&#x3D;&quot;guardar(frm.form.valid)&quot; autocomplete&#x3D;&quot;off&quot; novalidate&gt;
+            &lt;div class&#x3D;&quot;card card-accent-success&quot;&gt;
+                &lt;div class&#x3D;&quot;card-header&quot;&gt;
+                    &lt;strong&gt;Listado de aspirantes&lt;/strong&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;card-body&quot;&gt;
+
+                    &lt;table class&#x3D;&quot;table table-bordered&quot;&gt;
+                        &lt;thead class&#x3D;&quot;bg-primary&quot;&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;Orden&lt;/th&gt;
+                                &lt;th&gt;Identificación&lt;/th&gt;
+                                &lt;th&gt;Nombres Completos&lt;/th&gt;
+                                &lt;th *ngFor&#x3D;&quot;let area of lstAreasCalificados&quot;&gt;
+                                    {{ area.nombre +&quot;(&quot;+area.porcentaje+&quot;%)&quot;}}
+                                &lt;/th&gt;
+                                &lt;th class&#x3D;&quot;bg-success&quot; *ngIf&#x3D;&quot;pruebaEscojida.estado_prueba&#x3D;&#x3D;&#x27;C&#x27;&quot;&gt;Calificación&lt;/th&gt;
+                                &lt;th *ngFor&#x3D;&quot;let area of lstAreas&quot;&gt;
+                                    {{ area.nombre +&quot;(&quot;+area.porcentaje+&quot;%)&quot;}}
+                                &lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+
+                            &lt;tr *ngFor&#x3D;&quot;let aspirante of pruebaEscojida.listado; let i &#x3D; index&quot;&gt;
+                                &lt;td&gt;{{i+1}}&lt;/td&gt;
+                                &lt;td&gt;{{aspirante.num_identificacion}}&lt;/td&gt;
+                                &lt;td&gt;{{aspirante.nombres_completos}}&lt;/td&gt;
+
+                                &lt;td *ngFor&#x3D;&quot;let area_aspirante of aspirante.lstAreasCalificados ; let ir &#x3D; index&quot;&gt;
+                                    &lt;label&gt;{{area_aspirante.puntaje}}&lt;/label&gt;
+                                &lt;/td&gt;    
+
+                                &lt;td  class&#x3D;&quot;bg-success&quot; *ngIf&#x3D;&quot;pruebaEscojida.estado_prueba&#x3D;&#x3D;&#x27;C&#x27;&quot;&gt;&lt;strong&gt;{{aspirante.puntaje_total_prueba_admision}}&lt;/strong&gt;&lt;/td&gt;
+
+                                &lt;td *ngFor&#x3D;&quot;let area_aspirante of aspirante.lstAreas ; let ir &#x3D; index&quot;&gt;
+                                    &lt;input type&#x3D;&quot;text&quot; myNumberOnly id&#x3D;&quot;nota{{i}}_{{ir}}&quot; name&#x3D;&quot;nota{{i}}_{{ir}}&quot; [(ngModel)]&#x3D;&quot;area_aspirante.valor&quot; #nota{{i}}_{{ir}}&#x3D;&quot;ngModel&quot; class&#x3D;&quot;form-control&quot; required/&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;card-footer&quot;&gt;
+                    &lt;div class&#x3D;&quot;btn-toolbar&quot; role&#x3D;&quot;toolbar&quot; aria-label&#x3D;&quot;Toolbar with button groups&quot;&gt;
+                        &lt;div class&#x3D;&quot;btn-group mr-2&quot; role&#x3D;&quot;group&quot; aria-label&#x3D;&quot;Third group&quot;&gt;
+                            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-success&quot; *ngIf&#x3D;&quot;!esCalificar &amp;&amp; pruebaEscojida.estado_prueba&#x3D;&#x3D;&#x27;P&#x27;&quot; (click)&#x3D;&quot;calificar()&quot;&gt;
+                                &lt;i class&#x3D;&quot;fa fa-check-square&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; Calificar
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;btn-group mr-2&quot; role&#x3D;&quot;group&quot; aria-label&#x3D;&quot;Third group&quot;&gt;
+                            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot; *ngIf&#x3D;&quot;!esCalificar&quot; (click)&#x3D;&quot;regresar()&quot;&gt;
+                                &lt;i class&#x3D;&quot;fa fa-chevron-circle-left&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; Regresar
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;btn-toolbar&quot; *ngIf&#x3D;&quot;esCalificar &amp;&amp; pruebaEscojida.estado_prueba&#x3D;&#x3D;&#x27;P&#x27;&quot; role&#x3D;&quot;toolbar&quot; aria-label&#x3D;&quot;Toolbar with button groups&quot;&gt;
+                        &lt;div class&#x3D;&quot;btn-group mr-2&quot; role&#x3D;&quot;group&quot; aria-label&#x3D;&quot;Third group&quot;&gt;
+                            &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-success&quot; *ngIf&#x3D;&quot;esCalificar&quot;&gt;
+                                  &lt;i class&#x3D;&quot;fa fa-save&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; Guardar
+                                &lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;btn-group mr-2&quot; role&#x3D;&quot;group&quot; aria-label&#x3D;&quot;Third group&quot;&gt;
+                            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-danger&quot; *ngIf&#x3D;&quot;esCalificar&quot; (click)&#x3D;&quot;cancelar()&quot;&gt;
+                                    &lt;i class&#x3D;&quot;fa fa-times&quot; aria-hidden&#x3D;&quot;true&quot;&gt;&lt;/i&gt; Cancelar
+                                &lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+
+            &lt;/div&gt;
+        &lt;/form&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="animated fadeIn">    <div class="row">        <div class="col-sm-12">            <h4>Aplicacion de pruebas de admision</h4>        </div>    </div>    <div *ngIf="!pruebaEscojida">        <div class="card card-accent-success">            <div class="card-header">                <strong>Selección de prueba</strong>            </div>            <div class="card-body">                <p>Por favor seleccione el programa del cual desea revisar la prueba de admisión:</p>                <select class="form-control" [(ngModel)]="idPrueba">                  <option value="0">Seleccione...</option>                  <option *ngFor="let iprueba of lstPruebas" [ngValue]="iprueba.id_prueba">                      {{iprueba.nombre_unidad}}                    </option>                </select>            </div>            <div class="card-footer">                <button type="button" class="btn btn-success" (click)="seleccionarPrueba()">                    <i class="fa fa-play" aria-hidden="true"></i> Iniciar                </button>            </div>        </div>    </div>    <div *ngIf="pruebaEscojida">        <div class="card card-accent-success">            <div class="card-header">                <strong>Detalles de la prueba</strong>                <span *ngIf="pruebaEscojida.estado_prueba==\'P\'" class="badge badge-warning text-white float-right">Pendiente</span>                <span *ngIf="pruebaEscojida.estado_prueba==\'C\'" class="badge badge-success float-right">Calificada</span>            </div>            <div class="card-body">                <div class="row">                    <div class=" col-xl-4 col-4 col-sm-4 col-md-4">                        <label><strong> Programa:</strong></label>                        <p>{{pruebaEscojida.codigo_unidad+"-"+pruebaEscojida.nombre_unidad}}</p>                    </div>                    <div class="col-xl-4 col-4 col-sm-4 col-md-4">                        <label><strong>Lugar:</strong></label>                        <p>{{pruebaEscojida.lugar_prueba}}</p>                    </div>                    <div class="col-xl-4 col-4 col-sm-4 col-md-4">                        <label><strong>Fecha presentación:</strong></label>                        <p>{{pruebaEscojida.fecha_formateada}}</p>                    </div>                    <!-- es para marcar la fecha en la que fue calificada la prueba-->                    <div *ngIf="pruebaEscojida.estado_prueba==\'C\'" class="col-xl-4 col-4 col-sm-4 col-md-4">                        <label><strong>Fecha Calificacion:</strong></label>                        <p>{{pruebaEscojida.fecha_formateada_calif}}</p>                    </div>                </div>            </div>        </div>        <div class="row">            <div class="col-sm-2">                <div class="form-group">                    <button class="btn btn-primary " *ngIf="pruebaEscojida.estado_prueba==\'P\'">                            <i class="fa fa-list" aria-hidden="true"></i> Imprimir Listado                    </button>                    <button class="btn btn-success " *ngIf="pruebaEscojida.estado_prueba==\'C\'">                        <i class="fa fa-list" aria-hidden="true"></i> Imprimir Resultados                    </button>                </div>            </div>        </div>        <form #frm="ngForm" (ngSubmit)="guardar(frm.form.valid)" autocomplete="off" novalidate>            <div class="card card-accent-success">                <div class="card-header">                    <strong>Listado de aspirantes</strong>                </div>                <div class="card-body">                    <table class="table table-bordered">                        <thead class="bg-primary">                            <tr>                                <th>Orden</th>                                <th>Identificación</th>                                <th>Nombres Completos</th>                                <th *ngFor="let area of lstAreasCalificados">                                    {{ area.nombre +"("+area.porcentaje+"%)"}}                                </th>                                <th class="bg-success" *ngIf="pruebaEscojida.estado_prueba==\'C\'">Calificación</th>                                <th *ngFor="let area of lstAreas">                                    {{ area.nombre +"("+area.porcentaje+"%)"}}                                </th>                            </tr>                        </thead>                        <tbody>                            <tr *ngFor="let aspirante of pruebaEscojida.listado; let i = index">                                <td>{{i+1}}</td>                                <td>{{aspirante.num_identificacion}}</td>                                <td>{{aspirante.nombres_completos}}</td>                                <td *ngFor="let area_aspirante of aspirante.lstAreasCalificados ; let ir = index">                                    <label>{{area_aspirante.puntaje}}</label>                                </td>                                    <td  class="bg-success" *ngIf="pruebaEscojida.estado_prueba==\'C\'"><strong>{{aspirante.puntaje_total_prueba_admision}}</strong></td>                                <td *ngFor="let area_aspirante of aspirante.lstAreas ; let ir = index">                                    <input type="text" myNumberOnly id="nota{{i}}_{{ir}}" name="nota{{i}}_{{ir}}" [(ngModel)]="area_aspirante.valor" #nota{{i}}_{{ir}}="ngModel" class="form-control" required/>                                </td>                            </tr>                        </tbody>                    </table>                </div>                <div class="card-footer">                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">                        <div class="btn-group mr-2" role="group" aria-label="Third group">                            <button type="button" class="btn btn-success" *ngIf="!esCalificar && pruebaEscojida.estado_prueba==\'P\'" (click)="calificar()">                                <i class="fa fa-check-square" aria-hidden="true"></i> Calificar                            </button>                        </div>                        <div class="btn-group mr-2" role="group" aria-label="Third group">                            <button type="button" class="btn btn-danger" *ngIf="!esCalificar" (click)="regresar()">                                <i class="fa fa-chevron-circle-left" aria-hidden="true"></i> Regresar                            </button>                        </div>                    </div>                    <div class="btn-toolbar" *ngIf="esCalificar && pruebaEscojida.estado_prueba==\'P\'" role="toolbar" aria-label="Toolbar with button groups">                        <div class="btn-group mr-2" role="group" aria-label="Third group">                            <button type="submit" class="btn btn-success" *ngIf="esCalificar">                                  <i class="fa fa-save" aria-hidden="true"></i> Guardar                                </button>                        </div>                        <div class="btn-group mr-2" role="group" aria-label="Third group">                            <button type="button" class="btn btn-danger" *ngIf="esCalificar" (click)="cancelar()">                                    <i class="fa fa-times" aria-hidden="true"></i> Cancelar                                </button>                        </div>                    </div>                </div>            </div>        </form>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AlertsComponent', 'selector': ''},{'name': 'AppComponent', 'selector': 'body'},{'name': 'BadgesComponent', 'selector': ''},{'name': 'BrandButtonsComponent', 'selector': ''},{'name': 'ButtonsComponent', 'selector': ''},{'name': 'CardsComponent', 'selector': ''},{'name': 'CarouselsComponent', 'selector': ''},{'name': 'ChartJSComponent', 'selector': ''},{'name': 'CollapsesComponent', 'selector': ''},{'name': 'ColorsComponent', 'selector': ''},{'name': 'CoreUIIconsComponent', 'selector': ''},{'name': 'DashboardComponent', 'selector': ''},{'name': 'DefaultLayoutComponent', 'selector': 'app-dashboard'},{'name': 'DropdownsComponent', 'selector': ''},{'name': 'ExperienciaLaboralComponent', 'selector': 'app-experiencia-laboral'},{'name': 'FlagsComponent', 'selector': ''},{'name': 'FontAwesomeComponent', 'selector': ''},{'name': 'FormacionAcademicaComponent', 'selector': 'app-formacion-academica'},{'name': 'FormsComponent', 'selector': ''},{'name': 'ListadoAspirantesComponent', 'selector': 'app-listado-aspirantes-cupo'},{'name': 'ListadoCuposComponent', 'selector': 'app-listado-cupos'},{'name': 'LoginComponent', 'selector': 'app-dashboard'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'ModalsComponent', 'selector': ''},{'name': 'NucleoFamiliarComponent', 'selector': 'app-nucleo-familiar'},{'name': 'P404Component', 'selector': ''},{'name': 'P500Component', 'selector': ''},{'name': 'PaginationsComponent', 'selector': ''},{'name': 'PersonaComponent', 'selector': 'app-persona'},{'name': 'PersonalComponent', 'selector': 'app-personal'},{'name': 'PopoversComponent', 'selector': ''},{'name': 'ProcesoArchivoComponent', 'selector': 'app-proceso-archivo'},{'name': 'ProgressComponent', 'selector': ''},{'name': 'PruebasComponent', 'selector': 'app-pruebas'},{'name': 'RegisterComponent', 'selector': 'app-dashboard'},{'name': 'RegistroComponent', 'selector': 'app-registro'},{'name': 'SimpleLineIconsComponent', 'selector': ''},{'name': 'SolicitudComponent', 'selector': 'app-solicitud'},{'name': 'SwitchesComponent', 'selector': ''},{'name': 'TablesComponent', 'selector': ''},{'name': 'TabsComponent', 'selector': ''},{'name': 'TooltipsComponent', 'selector': ''},{'name': 'TypographyComponent', 'selector': ''},{'name': 'WidgetsComponent', 'selector': ''}];
+    var DIRECTIVES = [{'name': 'NumberOnlyDirective', 'selector': '[myNumberOnly]'},{'name': 'UppercaseDirective', 'selector': '[ngModel][uppercase]'}];
+    var ACTUAL_COMPONENT = {'name': 'PruebasComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PruebasComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
